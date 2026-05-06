@@ -1,15 +1,29 @@
+/* Wider article pages */
 .max-w-prose {
     max-width: 90rem !important;
 }
 
-.max-w-7xl {
+/* Wider general containers */
+.max-w-3xl,
+.max-w-4xl,
+.max-w-5xl,
+.max-w-6xl,
+.max-w-7xl,
+.max-w-screen-md,
+.max-w-screen-lg,
+.max-w-screen-xl {
     max-width: 95rem !important;
 }
 
-.max-w-6xl {
-    max-width: 90rem !important;
+/* Make homepage sections wider */
+main,
+article,
+section {
+    width: 100%;
 }
 
-.max-w-5xl {
-    max-width: 85rem !important;
+/* Wider central container */
+.container {
+    max-width: 95% !important;
+    width: 95% !important;
 }
