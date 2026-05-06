@@ -1,7 +1,7 @@
 ---
 description: Hi
 ---
-Hello, welcome to my homepage! Here you can find access to all my recent papers and expository notes. Please feel free to reach out if you would like to connect with me. I will be glad to help in any way possible!
+I am a first-year graduate student at the [University of Washington, Seattle](https://math.washington.edu/). I am broadly interested in Representation Theory. Before this, I completed my B.Math. from the [Indian Statistical Institute, Bangalore](https://www.isibang.ac.in/~statmath/) in 2026, where I was advised by [Professor Apoorva Khare](https://math.iisc.ac.in/~khare/).
 
 
 
