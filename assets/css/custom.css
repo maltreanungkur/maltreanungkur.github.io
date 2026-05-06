@@ -1,29 +1,51 @@
-/* Wider article pages */
+/* =========================================
+   Blowfish Global Width Customization
+   ========================================= */
+
+/* Widen all Tailwind max-width containers */
+main div[class*="max-w"],
+header div[class*="max-w"],
+section div[class*="max-w"],
+article div[class*="max-w"],
+nav div[class*="max-w"],
+footer div[class*="max-w"] {
+    max-width: 95rem !important;
+}
+
+/* Wider prose/article pages */
 .max-w-prose {
     max-width: 90rem !important;
 }
 
-/* Wider general containers */
-.max-w-3xl,
-.max-w-4xl,
-.max-w-5xl,
-.max-w-6xl,
-.max-w-7xl,
-.max-w-screen-md,
-.max-w-screen-lg,
-.max-w-screen-xl {
-    max-width: 95rem !important;
+/* Main site container */
+.container {
+    width: 95% !important;
+    max-width: 95% !important;
 }
 
-/* Make homepage sections wider */
+/* Prevent narrow wrappers */
 main,
 article,
 section {
     width: 100%;
 }
 
-/* Wider central container */
-.container {
-    max-width: 95% !important;
+/* Slightly increase horizontal spacing */
+.px-4 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.px-6 {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+}
+
+/* Homepage content width */
+.home-page,
+.homepage,
+.home {
+    max-width: 95rem !important;
     width: 95% !important;
+    margin: 0 auto;
 }
