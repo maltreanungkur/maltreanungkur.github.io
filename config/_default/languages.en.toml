@@ -13,8 +13,8 @@ copyright = "&copy; 2025 Treanungkur Mal"
 [params.author]
   name = "Treanungkur Mal"
   image = "img/logo.jpg"
-  headline = "Undergraduate student at the Indian Statistical Institute"
-  bio = "Undergraduate Mathematics Student."
+  headline = "Graduate Student at the University of Washington"
+  bio = "Graduate Student in Mathematics."
   links = [
     { email = "mailto:maltreanungkur@gmail.com" },
     # Uncomment the following links as needed
@@ -59,7 +59,6 @@ copyright = "&copy; 2025 Treanungkur Mal"
     # { twitch = "https://twitch.tv/username" },
     # { twitter = "https://twitter.com/username" },
      { x-twitter = "https://x.com/mal_treanungkur" },
-     { whatsapp = "https://wa.me/+918918517265" },
     # { youtube = "https://youtube.com/username" },
     # { ko-fi = "https://ko-fi.com/username" },
   ]
