@@ -2,15 +2,6 @@
    Blowfish Global Width Customization
    ========================================= */
 
-/* Main body width */
-body {
-    max-width: 95% !important;
-    width: 95% !important;
-    margin: auto !important;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-}
-
 /* Widen all Tailwind max-width containers */
 main div[class*="max-w"],
 header div[class*="max-w"],
@@ -39,14 +30,15 @@ section {
     width: 100%;
 }
 
-/* Remove excessive Blowfish side paddings */
-.px-4,
-.px-6,
-.sm\:px-14,
-.md\:px-24,
-.lg\:px-32 {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+/* Slightly increase horizontal spacing */
+.px-4 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.px-6 {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
 }
 
 /* Homepage content width */
