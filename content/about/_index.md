@@ -12,7 +12,7 @@ I am broadly interested in Representation Theory and Lie theory. I am also inter
 
 ------
 
-## Preprints
+## Preprints and Current Projects
 
 1. T. Mal. **Hecke Algebras and the Kazhdan–Lusztig Theory** *(in preparation).*
 
