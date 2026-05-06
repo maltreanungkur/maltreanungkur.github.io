@@ -1,3 +1,15 @@
 .max-w-prose {
     max-width: 90rem !important;
 }
+
+.max-w-7xl {
+    max-width: 95rem !important;
+}
+
+.max-w-6xl {
+    max-width: 90rem !important;
+}
+
+.max-w-5xl {
+    max-width: 85rem !important;
+}
