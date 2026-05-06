@@ -15,13 +15,10 @@ showAuthorBadges: false
 
 In the initial lectures, we’ll review basic concepts in group theory. We will also provide problem sets periodically. Please make a sincere effort to solve them, as this will prove invaluable in the long run. If you have any doubts, feel free to reach out to any of the instructors; we’re here to help!
 
-To make things more engaging, we’ll introduce a “Chocolate Problem” at the end of each class. Anyone who gives an honest attempt (partial or even incomplete) will be rewarded with chocolates!
-
-Our goal with this approach is to encourage you to engage with the material actively. To me, mathematics is a subject where simply knowing the theory isn’t enough. One must learn how to apply it effectively, and the best way to do so is to solve as many problems as possible.
+To make things more engaging, we’ll introduce a “Chocolate Problem” at the end of each class. Anyone who gives an honest attempt (partial or even incomplete) will be rewarded with chocolates! Our goal with this approach is to encourage you to engage with the material actively. To me, mathematics is a subject where simply knowing the theory isn’t enough. One must learn how to apply it effectively, and the best way to do so is to solve as many problems as possible.
 
 You’ll find recorded lectures, notes, and problem sets on this website. If you miss a lecture, don’t worry, we’ll keep everything updated here so that you can catch up.
 </div>
----
 
 ## Timeline
 
