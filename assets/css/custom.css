@@ -1,51 +1,21 @@
-/* =========================================
-   Blowfish Global Width Customization
-   ========================================= */
-
-/* Widen all Tailwind max-width containers */
-main div[class*="max-w"],
-header div[class*="max-w"],
-section div[class*="max-w"],
-article div[class*="max-w"],
-nav div[class*="max-w"],
-footer div[class*="max-w"] {
-    max-width: 95rem !important;
+body {
+    max-width: 95% !important;
+    width: 95% !important;
+    margin: auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
 }
 
-/* Wider prose/article pages */
+/* Remove huge Blowfish side paddings */
+.px-6,
+.sm\:px-14,
+.md\:px-24,
+.lg\:px-32 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+/* Wider prose pages */
 .max-w-prose {
     max-width: 90rem !important;
-}
-
-/* Main site container */
-.container {
-    width: 95% !important;
-    max-width: 95% !important;
-}
-
-/* Prevent narrow wrappers */
-main,
-article,
-section {
-    width: 100%;
-}
-
-/* Slightly increase horizontal spacing */
-.px-4 {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-}
-
-.px-6 {
-    padding-left: 2.5rem !important;
-    padding-right: 2.5rem !important;
-}
-
-/* Homepage content width */
-.home-page,
-.homepage,
-.home {
-    max-width: 95rem !important;
-    width: 95% !important;
-    margin: 0 auto;
 }
