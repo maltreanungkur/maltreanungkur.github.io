@@ -1,0 +1,123 @@
+colorScheme = "ocean"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+enableSearch = true
+enableRobotsTXT = true
+enableCodeCopy = true
+replyByEmail = false
+disableImageOptimization = false
+disableTextInHeader = false
+
+backgroundImageWidth = 1200
+defaultBackgroundImage = "img/background.jpg" # used as default for background images 
+# defaultFeaturedImage = "img/mew.jpg" # used as default for featured images in all articles
+
+highlightCurrentMenuArea = true
+smartTOC = true
+# smartTOCHideUnfocusedChildren = true
+
+giteaDefaultServer = "https://git.fsfe.org"
+forgejoDefaultServer = "https://v8.next.forgejo.org"
+
+[header]
+layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
+
+[footer]
+showMenu = true
+showCopyright = true
+showThemeAttribution = true
+showAppearanceSwitcher = true
+showScrollToTop = true
+
+[homepage]
+layout = "background"
+showRecent = false
+showRecentItems = 2
+showMoreLink = false
+showMoreLinkDest = "/posts/"
+cardView = false
+cardViewScreenWidth = false
+layoutBackgroundBlur = true
+
+[article]
+showDate = true
+showViews = false
+showLikes = false
+showDateOnlyInArticle = true
+showDateUpdated = true
+showAuthor = true
+showHero = true
+heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+layoutBackgroundBlur = true
+layoutBackgroundHeaderSpace = true
+showBreadcrumbs = true
+showDraftLabel = true
+showEdit = false
+editAppendPath = true
+seriesOpened = false
+showHeadingAnchors = true
+showPagination = true
+invertPagination = false
+showReadingTime = false
+showTableOfContents = true
+showTaxonomies = true
+showAuthorsBadges = true
+showWordCount = true
+showZenMode = true
+
+[list]
+showHero = true
+heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+layoutBackgroundBlur = true
+layoutBackgroundHeaderSpace = true
+showBreadcrumbs = false
+showSummary = false
+showViews = false
+showLikes = false
+showTableOfContents = true
+showCards = true
+orderByWeight = false
+groupByYear = true
+cardView = true
+cardViewScreenWidth = false
+constrainItemsWidth = false
+
+[sitemap]
+excludedKinds = [ "taxonomy", "term" ]
+
+[taxonomy]
+showTermCount = true
+showHero = false
+showBreadcrumbs = false
+showViews = false
+showLikes = false
+showTableOfContents = true
+cardView = false
+
+[term]
+showHero = false
+showBreadcrumbs = false
+showViews = false
+showLikes = false
+showTableOfContents = true
+groupByYear = false
+cardView = false
+cardViewScreenWidth = false
+
+[firebase]
+
+[fathomAnalytics]
+
+[umamiAnalytics]
+
+[selineAnalytics]
+
+[buymeacoffee]
+
+[verification]
+
+[rssnext]
+
+# Custom CSS for Table of Contents
+[customCSS]
+tocMarginLeft = "20px" # Adjust this value to shift the TOC
