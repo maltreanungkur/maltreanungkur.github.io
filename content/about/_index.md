@@ -27,4 +27,3 @@ Published at: **The Electronic Journal of Combinatorics** [{{< icon "link" >}}](
 
 - Mini-Course: Introduction to Geometric Group Theory <br>
   As part of the UGDRP at ISI Bangalore. [Video](https://maltreanungkur.github.io/teaching/udgrp/)
-
