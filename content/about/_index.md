@@ -4,6 +4,8 @@ description: "Here I will mostly write about my papers"
 showDate: false
 showTableOfContents: false
 sharinglinks: [""]
+showArticleList: false
+showArticles: false
 ---
 
 ## Mathematical Interests
