@@ -19,10 +19,14 @@ description: Hi
   }
 
   .about-text h3 {
-    text-align: left;
-    margin: 1.4rem 0 1.4rem 0;
-    line-height: 1.2;
-  }
+  text-align: left;
+  margin: 1.4rem 0 0.6rem 0;
+  line-height: 1.2;
+}
+
+.about-text .contact-item {
+  margin: 0 0 0.6rem 0;
+}
 
   .about-text a {
     text-decoration: underline;
@@ -32,18 +36,6 @@ description: Hi
     color: inherit;
   }
 
-  .about-text .contact-item {
-    margin: 0 0 1.4rem 0;
-  }
-
-  .about-text .email-img {
-    height: 1.15em !important;
-    width: auto !important;
-    max-width: none !important;
-    display: inline-block;
-    vertical-align: text-bottom;
-    margin-left: 6px;
-  }
 </style>
 
 <div class="about-text">
@@ -61,11 +53,11 @@ description: Hi
   <h3>Contact</h3>
 
   <p class="contact-item">
-    <strong>Email:</strong>
-    <a href="mailto:trmal@uw.edu">
-      <img src="/images/email.png" alt="trmal@uw.edu" class="email-img">
-    </a>
-  </p>
+  <strong>Email:</strong>
+  <a href="mailto:trmal@uw.edu" style="display:inline-block; vertical-align:middle; margin-left:4px;">
+    <img src="/images/email.png" alt="Email" style="height:1.1em; vertical-align:middle;">
+  </a>
+</p>
 
   <p class="contact-item">
     <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
