@@ -42,10 +42,8 @@ description: Hi
     I am a first-year Ph.D. student in the
     <a href="https://math.washington.edu/">Department of Mathematics</a>
     at the
-    <a href="https://www.washington.edu/">University of Washington, Seattle</a>
-    (2026–). Previously, I completed my B.Math. at the
-    <a href="https://www.isibang.ac.in/">Indian Statistical Institute, Bangalore</a>
-    (2023–2026), where I was advised by
+    <a href="https://www.washington.edu/">University of Washington, Seattle</a>. Previously, I completed my B.Math. at the
+    <a href="https://www.isibang.ac.in/">Indian Statistical Institute, Bangalore</a>, where I was advised by
     <a href="https://math.iisc.ac.in/~khare/">Professor Apoorva Khare</a>.
   </p>
 
@@ -53,19 +51,11 @@ description: Hi
 
   <h3>Contact</h3>
 
-  <p class="contact-item"><strong>Email:</strong> <span id="email"></span></p>
+  <p class="contact-item">
+    <img src="/images/email.png" alt="Email" style="height: 22px; vertical-align: middle;">
+  </p>
 
   <p class="contact-item">
-  <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
-</p>
+    <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
+  </p>
 </div>
-
-<script>
-  (() => {
-    const u = "trmal";
-    const d = "uw.edu";
-    const e = `${u}@${d}`;
-    document.getElementById("email").innerHTML =
-      `<a href="mailto:${e}">${e}</a>`;
-  })();
-</script>
