@@ -53,7 +53,9 @@ description: Hi
 
   <p class="contact-item">
     <strong>Email:</strong>
-    <img src="/images/email.png" alt="Email" style="height: 22px; vertical-align: middle; margin-left: 4px;">
+    <a href="mailto:trmal@uw.edu">
+      <img src="/images/email.png" alt="Email" style="height: 22px; vertical-align: middle; margin-left: 4px;">
+    </a>
   </p>
 
   <p class="contact-item">
