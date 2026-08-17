@@ -51,7 +51,7 @@ description: Hi
 
   <p>I am interested in representation theory.</p>
 
-  <h3>Contact</h3>
+  <h3>Contact Information</h3>
 
  <p class="contact-item" style="margin-top:-23px;">
   <strong>Email:</strong>
