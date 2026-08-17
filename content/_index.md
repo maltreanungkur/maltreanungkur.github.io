@@ -20,12 +20,12 @@ description: Hi
 
   .about-text h3 {
     text-align: left;
-    margin: 1.4rem 0 0.6rem 0;
+    margin: 1.4rem 0 0.35rem 0;
     line-height: 1.2;
   }
 
   .about-text .contact-item {
-    margin: 0 0 0.6rem 0;
+    margin: 0 0 0.35rem 0;
   }
 
   .about-text a {
@@ -46,19 +46,21 @@ description: Hi
 
   <h3>Contact</h3>
 
- <p class="contact-item" style="margin-top:-18px;">
-  <strong>Email:</strong>
-  <span style="display:inline-flex;align-items:center;white-space:nowrap;margin-left:4px;">
-    <a href="mailto:trmal@uw.edu" style="display:inline-flex;align-items:center;">
-      <img src="/images/email.png" alt="Email" style="height:1.5em;width:auto;">
-    </a>
-    <button title="Copy email" style="background:none;border:none;padding:0;margin-left:6px;cursor:pointer;display:inline-flex;align-items:center;font-size:0.95em;color:inherit;" onclick="navigator.clipboard.writeText('trmal@uw.edu');return false;">
-  ⧉
-</button>
-  </span>
-</p>
+  <p class="contact-item">
+    <strong>Email:</strong>
+    <span style="display:inline-flex;align-items:center;white-space:nowrap;margin-left:4px;">
+      <a href="mailto:trmal@uw.edu" style="display:inline-flex;align-items:center;">
+        <img src="/images/email.png" alt="Email" style="height:1.5em;width:auto;">
+      </a>
+      <button title="Copy email"
+        style="background:none;border:none;padding:0;margin-left:6px;cursor:pointer;display:inline-flex;align-items:center;font-size:0.95em;color:inherit;"
+        onclick="navigator.clipboard.writeText('trmal@uw.edu');return false;">
+        ⧉
+      </button>
+    </span>
+  </p>
 
-<p class="contact-item" style="margin-top:-22px;">
-  <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
-</p>
+  <p class="contact-item">
+    <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
+  </p>
 </div>
