@@ -26,15 +26,13 @@ description: Hi
   </p>
 
   <p>I am interested in representation theory.</p>
+  
   <h3>Contact</h3>
 
   <p><strong>Email:</strong> <span id="email"></span></p>
 
   <p>
-    <strong>Office:</strong><br>
-    PDL-C430, Department of Mathematics<br>
-    University of Washington, Seattle<br>
-    Padelford Hall, Seattle, WA 98195-4350
+    <strong>Office:</strong><br>PDL-C430, Department of Mathematics, University of Washington, Seattle. Padelford Hall, Seattle, WA 98195-4350
   </p>
 </div>
 
