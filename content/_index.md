@@ -15,13 +15,13 @@ description: Hi
     hyphens: auto;
     -webkit-hyphens: auto;
     line-height: 1.7;
-    margin-bottom: 1.4rem;
+    margin: 0 0 1.4rem 0;
   }
 
   .about-text h3 {
     text-align: left;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin: 1.4rem 0 1.4rem 0;
+    line-height: 1.2;
   }
 
   .about-text a {
@@ -30,6 +30,10 @@ description: Hi
     text-decoration-color: #888;
     text-underline-offset: 4px;
     color: inherit;
+  }
+
+  .about-text .contact-item {
+    margin: 0 0 1.4rem 0;
   }
 </style>
 
@@ -49,11 +53,11 @@ description: Hi
 
   <h3>Contact</h3>
 
-  <p><strong>Email:</strong> <span id="email"></span></p>
+  <p class="contact-item"><strong>Email:</strong> <span id="email"></span></p>
 
-  <p>
-    <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
-  </p>
+  <p class="contact-item">
+  <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
+</p>
 </div>
 
 <script>
