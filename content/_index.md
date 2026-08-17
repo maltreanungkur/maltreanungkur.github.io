@@ -46,14 +46,14 @@ description: Hi
 
   <h3>Contact</h3>
 
-  <p class="contact-item">
+  <p class="contact-item" style="margin-top:-18px;">
     <strong>Email:</strong>
     <a href="mailto:trmal@uw.edu" style="display:inline-block; vertical-align:middle; margin-left:4px;">
       <img src="/images/email.png" alt="Email" style="height:1.5em; vertical-align:middle;">
     </a>
   </p>
 
-  <p class="contact-item">
+  <p class="contact-item" style="margin-top:-22px;">
     <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
   </p>
 </div>
