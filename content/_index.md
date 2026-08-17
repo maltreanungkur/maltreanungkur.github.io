@@ -52,9 +52,9 @@ description: Hi
     <a href="mailto:trmal@uw.edu" style="display:inline-flex;align-items:center;">
       <img src="/images/email.png" alt="Email" style="height:1.5em;width:auto;">
     </a>
-    <button title="Copy email" style="background:none;border:none;padding:0;margin-left:6px;cursor:pointer;display:inline-flex;align-items:center;" onclick="navigator.clipboard.writeText('trmal@uw.edu');return false;">
-      📋
-    </button>
+    <button title="Copy email" style="background:none;border:none;padding:0;margin-left:6px;cursor:pointer;display:inline-flex;align-items:center;font-size:0.95em;color:inherit;" onclick="navigator.clipboard.writeText('trmal@uw.edu');return false;">
+  ⧉
+</button>
   </span>
 </p>
 
