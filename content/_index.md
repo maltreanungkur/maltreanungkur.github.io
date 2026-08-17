@@ -65,7 +65,7 @@ description: Hi
   </span>
 </p>
 
-  <p class="contact-item" style="margin-top:-9px;">
+  <p class="contact-item" style="margin-top:-14px;">
     <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
   </p>
 </div>
