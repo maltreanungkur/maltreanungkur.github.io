@@ -1,8 +1,8 @@
 ---
 description: Hi
 ---
-<p align="center">
-  I am a first-year Ph.D. student at the <a href="https://math.washington.edu/">University of Washington, Seattle</a>.<br>
-  Previously, I did my B.Math. from the <a href="https://www.isibang.ac.in/~statmath/">Indian Statistical Institute, Bangalore</a>.<br>
+<div style="text-align: justify; hyphens: auto; -webkit-hyphens: auto; max-width: 800px; margin: 0 auto;">
+  I am a first-year Ph.D. student at the University of Washington, Seattle. 
+  Previously, I did my B.Math. from the Indian Statistical Institute, Bangalore. 
   I am interested in Representation Theory.
-</p>
+</div>
