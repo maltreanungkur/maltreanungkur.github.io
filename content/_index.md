@@ -20,12 +20,13 @@ description: Hi
 
   .about-text h3 {
   text-align: left;
-  margin: 1.4rem 0 0.6rem 0;
+  margin: 1.4rem 0 0.4rem 0;
   line-height: 1.2;
 }
 
 .about-text .contact-item {
-  margin: 0 0 0.6rem 0;
+  line-height: 1.7;
+  margin: 0 0 0.4rem 0;
 }
 
   .about-text a {
@@ -50,16 +51,15 @@ description: Hi
 
   <p>I am interested in representation theory.</p>
 
-  <h3>Contact</h3>
+ <h3>Contact</h3>
 
-  <p class="contact-item">
+<div class="contact-item">
   <strong>Email:</strong>
   <a href="mailto:trmal@uw.edu" style="display:inline-block; vertical-align:middle; margin-left:4px;">
-    <img src="/images/email.png" alt="Email" style="height:1.5em; vertical-align:middle;">
+    <img src="/images/email.png" alt="Email" style="height:1.15em; width:auto; vertical-align:middle;">
   </a>
-</p>
+</div>
 
-  <p class="contact-item">
-    <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
-  </p>
+<div class="contact-item">
+  <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
 </div>
