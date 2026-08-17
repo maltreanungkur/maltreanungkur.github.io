@@ -53,9 +53,9 @@ description: Hi
 
   <h3>Contact</h3>
 
- <p class="contact-item" style="margin-top:-5px;">
+ <p class="contact-item" style="margin-top:-18px;">
   <strong>Email:</strong>
-  <span style="display:inline-flex;align-items:center;white-space:nowrap;margin-left:4px;">
+  <span style="display:inline-flex;align-items:center;white-space:nowrap;margin-left:4px;transform:translateY(2px);">
     <a href="mailto:trmal@uw.edu" style="display:inline-flex;align-items:center;">
       <img src="/images/email.png" alt="Email" style="height:1.5em;width:auto;">
     </a>
@@ -65,7 +65,7 @@ description: Hi
   </span>
 </p>
 
-  <p class="contact-item" style="margin-top:-5px;">
+  <p class="contact-item" style="margin-top:-22px;">
     <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
   </p>
 </div>
