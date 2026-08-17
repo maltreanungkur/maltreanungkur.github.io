@@ -27,7 +27,7 @@ copyright = "&copy; 2025 Treanungkur Mal"
     # { dev = "https://dev.to/username" },
      #{ discord = "https://discord.gg/maltreanungkur" },
     # { dribbble = "https://dribbble.com/username" },
-     { facebook = "https://www.facebook.com/treanungkur" },
+    # { facebook = "https://www.facebook.com/treanungkur" },
     # { flickr = "https://www.flickr.com/photos/username/" },
     # { foursquare = "https://foursquare.com/username" },
     { github = "https://github.com/maltreanungkur" },
@@ -61,4 +61,7 @@ copyright = "&copy; 2025 Treanungkur Mal"
      { x-twitter = "https://x.com/mal_treanungkur" },
     # { youtube = "https://youtube.com/username" },
     # { ko-fi = "https://ko-fi.com/username" },
+    {Google_Scholar_logo = "https://scholar.google.com/citations?user=YPAVE68AAAAJ&hl=en" },
+    #{orcid = "https://orcid.org/"},
+    #{researchgate = ""},
   ]
