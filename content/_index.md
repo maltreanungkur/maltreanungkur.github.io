@@ -53,22 +53,17 @@ description: Hi
 
   <h3>Contact</h3>
 
-  <p class="contact-item" style="margin-top:-18px;">
-    <strong>Email:</strong>
-    <span style="display:inline-flex;align-items:center;white-space:nowrap;margin-left:4px;">
-      <a href="mailto:trmal@uw.edu" style="display:inline-flex;align-items:center;">
-        <img src="/images/email.png" alt="Email" style="height:1.5em;width:auto;">
-      </a>
-
-      <button
-        type="button"
-        title="Copy email"
-        onclick="navigator.clipboard.writeText('trmal@uw.edu'); return false;"
-        style="background:none;border:none;padding:0;margin-left:6px;cursor:pointer;display:inline-flex;align-items:center;font-size:0.95em;color:inherit;">
-        ⧉
-      </button>
-    </span>
-  </p>
+ <p class="contact-item" style="margin-top:-14px;">
+  <strong>Email:</strong>
+  <span style="display:inline-flex;align-items:center;white-space:nowrap;margin-left:4px;">
+    <a href="mailto:trmal@uw.edu" style="display:inline-flex;align-items:center;">
+      <img src="/images/email.png" alt="Email" style="height:1.5em;width:auto;">
+    </a>
+    <button title="Copy email" style="background:none;border:none;padding:0;margin-left:6px;cursor:pointer;display:inline-flex;align-items:center;font-size:0.95em;color:inherit;" onclick="navigator.clipboard.writeText('trmal@uw.edu');return false;">
+  ⧉
+</button>
+  </span>
+</p>
 
   <p class="contact-item" style="margin-top:-22px;">
     <strong>Office:</strong> PDL C-430, Padelford Hall, Department of Mathematics, University of Washington, Seattle, WA 98195-4350, USA.
