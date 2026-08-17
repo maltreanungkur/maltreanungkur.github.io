@@ -1,15 +1,3 @@
-languageCode = "en"
-languageName = "English"
-weight = 1
-title = "Treanungkur Mal"
-
-[params]
-displayName = "EN"
-isoCode = "en"
-rtl = false
-dateFormat = "2 January 2006"
-copyright = "&copy; 2025 Treanungkur Mal"
-
 [params.author]
   name = "Treanungkur Mal"
   image = "img/logo.jpg"
@@ -17,51 +5,10 @@ copyright = "&copy; 2025 Treanungkur Mal"
   bio = "Graduate Student in Mathematics."
   links = [
     { email = "mailto:maltreanungkur@gmail.com" },
-    # Uncomment the following links as needed
-    # { link = "https://link-to-some-website.com/" },
-    # { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
-    # { apple = "https://www.apple.com" },
-    # { blogger = "https://username.blogspot.com/" },
-    # { bluesky = "https://bsky.app/profile/username" },
-    # { codepen = "https://codepen.io/username" },
-    # { dev = "https://dev.to/username" },
-     #{ discord = "https://discord.gg/maltreanungkur" },
-    # { dribbble = "https://dribbble.com/username" },
-    # { facebook = "https://www.facebook.com/treanungkur" },
-    # { flickr = "https://www.flickr.com/photos/username/" },
-    # { foursquare = "https://foursquare.com/username" },
     { github = "https://github.com/maltreanungkur" },
-    # { gitlab = "https://gitlab.com/username" },
-    # { google = "https://www.google.com/" },
-    # { hashnode = "https://username.hashnode.dev" },
     { instagram = "https://instagram.com/treanungkur.mal" },
-    # { keybase = "https://keybase.io/username" },
-    # { kickstarter = "https://www.kickstarter.com/profile/username" },
-    # { lastfm = "https://lastfm.com/user/username" },
-    # { linkedin = "https://linkedin.com/in/username" },
-    # { mastodon = "https://mastodon.instance/@username" },
-    # { medium = "https://medium.com/username" },
-    # { microsoft = "https://www.microsoft.com/" },
-    # { orcid = "https://orcid.org/userid" },
-    # { patreon = "https://www.patreon.com/username" },
-    # { pinterest = "https://pinterest.com/username" },
-    # { reddit = "https://reddit.com/user/username" },
-    # { researchgate = "https://www.researchgate.net/profile/username" },
-    # { slack = "https://workspace.url/team/userid" },
-    # { snapchat = "https://snapchat.com/add/username" },
-    # { soundcloud = "https://soundcloud.com/username" },
-    # { stack-overflow = "https://stackoverflow.com/users/userid/username" },
-    # { steam = "https://steamcommunity.com/profiles/userid" },
-    # { telegram = "https://t.me/TreanungkurMal" },
-    # { threads = "https://www.threads.net/@username" },
-    # { tiktok = "https://tiktok.com/@username" },
-    # { tumblr = "https://username.tumblr.com" },
-    # { twitch = "https://twitch.tv/username" },
-    # { twitter = "https://twitter.com/username" },
-     { x-twitter = "https://x.com/mal_treanungkur" },
-    # { youtube = "https://youtube.com/username" },
-    # { ko-fi = "https://ko-fi.com/username" },
-    {Google_Scholar_logo = "https://scholar.google.com/citations?user=YPAVE68AAAAJ&hl=en" },
-    #{orcid = "https://orcid.org/"},
-    #{researchgate = ""},
+    { x-twitter = "https://x.com/mal_treanungkur" },
+    { google-scholar = "https://scholar.google.com/citations?user=YPAVE68AAAAJ&hl=en" },
+    # { orcid = "https://orcid.org/" },
+    # { researchgate = "" },
   ]
