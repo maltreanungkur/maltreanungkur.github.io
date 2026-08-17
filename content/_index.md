@@ -48,22 +48,12 @@ description: Hi
 
  <p class="contact-item" style="margin-top:-18px;">
   <strong>Email:</strong>
-
-  <span style="display:inline-flex; align-items:center; white-space:nowrap; margin-left:4px;">
-    <a href="mailto:trmal@uw.edu" style="display:inline-flex; align-items:center;">
-      <img src="/images/email.png" alt="Email" style="height:1.5em; width:auto;">
+  <span style="display:inline-flex;align-items:center;white-space:nowrap;margin-left:4px;">
+    <a href="mailto:trmal@uw.edu" style="display:inline-flex;align-items:center;">
+      <img src="/images/email.png" alt="Email" style="height:1.5em;width:auto;">
     </a>
-
-    <button
-      onclick="navigator.clipboard.writeText('trmal@uw.edu')"
-      title="Copy email"
-      style="background:none; border:none; padding:0; margin-left:6px; cursor:pointer; color:inherit; display:inline-flex; align-items:center;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-           viewBox="0 0 24 24" fill="none" stroke="currentColor"
-           stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="9" y="9" width="13" height="13" rx="2"></rect>
-        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-      </svg>
+    <button title="Copy email" style="background:none;border:none;padding:0;margin-left:6px;cursor:pointer;display:inline-flex;align-items:center;" onclick="navigator.clipboard.writeText('trmal@uw.edu');return false;">
+      📋
     </button>
   </span>
 </p>
