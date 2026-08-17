@@ -52,7 +52,8 @@ description: Hi
   <h3>Contact</h3>
 
   <p class="contact-item">
-    <img src="/images/email.png" alt="Email" style="height: 22px; vertical-align: middle;">
+    <strong>Email:</strong>
+    <img src="/images/email.png" alt="Email" style="height: 22px; vertical-align: middle; margin-left: 4px;">
   </p>
 
   <p class="contact-item">
