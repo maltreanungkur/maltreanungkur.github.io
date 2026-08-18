@@ -44,7 +44,7 @@ description: Hi
     at the
     <a href="https://www.washington.edu/">University of Washington, Seattle</a>.
     Previously, I completed my B.Math. at the
-    <a href="https://www.isibang.ac.in/">Indian Statistical Institute, Bangalore</a>,
+    <a href="https://www.isibang.ac.in/~statmath/">Indian Statistical Institute, Bangalore</a>,
     where I was advised by
     <a href="https://math.iisc.ac.in/~khare/">Professor Apoorva Khare</a>.
   </p>
