@@ -8,6 +8,8 @@ replyByEmail = false
 disableImageOptimization = false
 disableTextInHeader = false
 
+copyright = "© 2026 Treanungkur Mal"
+
 backgroundImageWidth = 1200
 defaultBackgroundImage = "img/background.jpg" # used as default for background images 
 # defaultFeaturedImage = "img/mew.jpg" # used as default for featured images in all articles
