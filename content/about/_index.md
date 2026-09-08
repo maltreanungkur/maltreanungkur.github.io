@@ -16,11 +16,11 @@ I am broadly interested in Representation Theory and Lie Algebra.
 
 ## Preprints and Current Projects
 
-1. **T. Mal**. [Hecke Algebras and the Kazhdan–Lusztig Theory](https://maltreanungkur.github.io/about/) (in preparation).
+1. [*Hecke Algebras and the Kazhdan–Lusztig Theory*](https://maltreanungkur.github.io/about/), **T. Mal** (in preparation).
 
-2. *Constructions of Macaulay Posets and Macaulay Rings*, P. Beall, E. Boyali, N. Chen, E. Chlachidze, T. T. Dao, F. Garvey, M. Johnson, Y. O. Li, N. Kuzmanovski, K. Ma, **T. Mal**, R. Marasinghe, Q. Mayo, N. Minsky-Primus, A. Seceleanu and S. Veerapaneni.\
-[**The Electronic Journal of Combinatorics**](https://doi.org/10.37236/14245) *33 (2026),* no. *2, P2.52*.\
-[`arXiv:2502.15166`](https://arxiv.org/abs/2502.15166)..
+2. [*Constructions of Macaulay Posets and Macaulay Rings*](https://doi.org/10.37236/14245), P. Beall, E. Boyali, N. Chen, E. Chlachidze, T. T. Dao, F. Garvey, M. Johnson, Y. O. Li, N. Kuzmanovski, K. Ma, **T. Mal**, R. Marasinghe, Q. Mayo, N. Minsky-Primus, A. Seceleanu and S. Veerapaneni.
+**The Electronic Journal of Combinatorics** *33 (2026),* no. *2, P2.52*. [(arXiv:2502.15166)](https://arxiv.org/abs/2502.15166).
+
 ------
 
 ## Talks and Mini-Courses
