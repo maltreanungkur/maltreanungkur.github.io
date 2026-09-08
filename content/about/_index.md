@@ -10,7 +10,7 @@ showArticles: false
 
 ## Mathematical Interests
 
-I am broadly interested in Representation Theory and Lie theory. I am also interested in low-dimensional topology and geometric group theory.
+I am broadly interested in Representation Theory and Lie Algebra.
 
 ------
 
@@ -18,8 +18,9 @@ I am broadly interested in Representation Theory and Lie theory. I am also inter
 
 1. **T. Mal**. [Hecke Algebras and the Kazhdan–Lusztig Theory](https://maltreanungkur.github.io/about/) (in preparation).
 
-2. P. Beall, E. Boyali, N. Chen, E. Chlachidze, T. T. Dao, F. Garvey, M. Johnson, Y. O. Li, N. Kuzmanovski, K. Ma, **T. Mal**, R. Marasinghe, Q. Mayo, N. Minsky-Primus, A. Seceleanu, S. Veerapaneni. [Constructions of Macaulay Posets and Macaulay Rings](https://arxiv.org/abs/2502.15166) (arXiv version).\
-Published at: **The Electronic Journal of Combinatorics** [{{< icon "link" >}}](https://doi.org/10.37236/14245).
+2. *Constructions of Macaulay Posets and Macaulay Rings*, P. Beall, E. Boyali, N. Chen, E. Chlachidze, T. T. Dao, F. Garvey, M. Johnson, Y. O. Li, N. Kuzmanovski, K. Ma, **T. Mal**, R. Marasinghe, Q. Mayo, N. Minsky-Primus, A. Seceleanu and S. Veerapaneni.\
+[**The Electronic Journal of Combinatorics**](https://doi.org/10.37236/14245) *33 (2026),* no. *2, P2.52*.\
+[`arXiv:2502.15166`](https://arxiv.org/abs/2502.15166)..
 ------
 
 ## Talks and Mini-Courses
