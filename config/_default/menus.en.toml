@@ -23,7 +23,7 @@
 
 [[main]]
  name = "Research"
- pageRef = "about"
+ pageRef = "research"
  weight = 10
 
 [[main]]
