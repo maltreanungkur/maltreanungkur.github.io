@@ -100,16 +100,18 @@
 
 
   <!-- Expanded abstract -->
-<div class="research-card-expanded">
+  <div class="research-card-expanded">
 
-  <div class="research-card-abstract">
+    <div class="research-card-abstract">
 
-    {{ with .Inner }}
-      {{ . | strings.TrimSpace | .Page.RenderString }}
-    {{ end }}
+      {{ $page := .Page }}
+
+      {{ with .Inner }}
+        {{ $page.RenderString (strings.TrimSpace .) }}
+      {{ end }}
+
+    </div>
 
   </div>
-
-</div>
 
 </details>
