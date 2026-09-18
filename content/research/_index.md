@@ -14,7 +14,7 @@ I am broadly interested in Representation Theory and Lie Algebra.
 
 ------
 
-## Preprints and Current Projects
+## Preprints and Published Papers
 
 {{< katex >}}
 
