@@ -1,4 +1,4 @@
-<details class="research-card">
+<details class="research-card{{ with .Get "status" }} research-card-{{ . | urlize }}{{ end }}">
 
   <summary class="research-card-summary">
 
@@ -7,7 +7,7 @@
       {{ add .Ordinal 1 }}
     </div>
 
-    <!-- Main card content -->
+    <!-- Main content -->
     <div class="research-card-content">
 
       <!-- Status -->
@@ -22,9 +22,16 @@
         {{ .Get "title" }}
       </h3>
 
-      <!-- Short description -->
-      {{ with .Get "description" }}
-        <div class="research-card-description">
+      <!-- Authors -->
+      {{ with .Get "authors" }}
+        <div class="research-card-authors">
+          {{ . | markdownify }}
+        </div>
+      {{ end }}
+
+      <!-- Journal / publication information -->
+      {{ with .Get "journal" }}
+        <div class="research-card-journal">
           {{ . | markdownify }}
         </div>
       {{ end }}
@@ -47,7 +54,7 @@
         {{ end }}
 
         <!-- Journal Page -->
-        {{ with .Get "journal" }}
+        {{ with .Get "journalurl" }}
           <a
             href="{{ . }}"
             class="research-card-button"
