@@ -1,37 +1,108 @@
-<div class="research-card">
+<details class="research-card">
 
-  <div class="research-card-number">
-    {{ add .Ordinal 1 }}
-  </div>
+  <summary class="research-card-summary">
 
-  <div class="research-card-content">
+    <!-- Number -->
+    <div class="research-card-number">
+      {{ add .Ordinal 1 }}
+    </div>
 
-    <h3 class="research-card-title">
-      {{ .Get "title" }}
-    </h3>
+    <!-- Main card content -->
+    <div class="research-card-content">
 
-    <p class="research-card-subtitle">
-      {{ .Get "subtitle" }}
-    </p>
-
-    <div class="research-card-tags">
-      {{ range split (.Get "tags") "|" }}
-        <span class="research-card-tag">{{ . }}</span>
+      <!-- Status -->
+      {{ with .Get "status" }}
+        <div class="research-card-status">
+          {{ . }}
+        </div>
       {{ end }}
+
+      <!-- Title -->
+      <h3 class="research-card-title">
+        {{ .Get "title" }}
+      </h3>
+
+      <!-- Short description -->
+      {{ with .Get "description" }}
+        <div class="research-card-description">
+          {{ . | markdownify }}
+        </div>
+      {{ end }}
+
+      <!-- Buttons -->
+      <div class="research-card-buttons">
+
+        <!-- arXiv -->
+        {{ with .Get "arxiv" }}
+          <a
+            href="{{ . }}"
+            class="research-card-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="event.stopPropagation();"
+          >
+            <span>▣</span>
+            arXiv
+          </a>
+        {{ end }}
+
+        <!-- Journal Page -->
+        {{ with .Get "journal" }}
+          <a
+            href="{{ . }}"
+            class="research-card-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="event.stopPropagation();"
+          >
+            <span>↗</span>
+            Journal Page
+          </a>
+        {{ end }}
+
+        <!-- Abstract -->
+        <button
+          type="button"
+          class="research-card-button"
+          onclick="event.preventDefault(); event.stopPropagation(); this.closest('details').open = true;"
+        >
+          <span>●</span>
+          Abstract
+        </button>
+
+        <!-- Copy BibTeX -->
+        {{ with .Get "bibtex" }}
+          <button
+            type="button"
+            class="research-card-button"
+            onclick="event.preventDefault(); event.stopPropagation(); navigator.clipboard.writeText({{ . | jsonify }}); this.innerHTML='✓ Copied BibTeX'; setTimeout(() => this.innerHTML='<span>▣</span> Copy BibTeX', 1800);"
+          >
+            <span>▣</span>
+            Copy BibTeX
+          </button>
+        {{ end }}
+
+      </div>
+
     </div>
 
-    {{ with .Inner }}
-    <div class="research-card-description">
-      {{ . | markdownify }}
-    </div>
-    {{ end }}
+    <!-- Plus / Minus -->
+    <span class="research-card-plus" aria-hidden="true"></span>
 
-    {{ with .Get "report" }}
-    <a href="{{ . }}" class="research-card-plus" aria-label="View details">
-      +
-    </a>
-    {{ end }}
+  </summary>
+
+
+  <!-- Expanded abstract -->
+  <div class="research-card-expanded">
+
+    <div class="research-card-abstract">
+
+      {{ with .Inner }}
+        {{ . | markdownify }}
+      {{ end }}
+
+    </div>
 
   </div>
 
-</div>
+</details>
