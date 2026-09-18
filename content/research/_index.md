@@ -22,7 +22,6 @@ I am broadly interested in Representation Theory and Lie Algebra.
     status="IN PREPARATION"
     title="Hecke Algebras and the Kazhdan–Lusztig Theory"
     authors="**T. Mal**"
-    journal="In preparation"
     bibtex="@misc{mal_hecke, author={Mal, Treanungkur}, title={Hecke Algebras and the Kazhdan--Lusztig Theory}, note={In preparation}}"
 >}}
 
