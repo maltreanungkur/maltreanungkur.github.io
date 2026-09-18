@@ -161,9 +161,11 @@ section {
 
     border-radius: 4px;
 
-    background: rgba(100, 50, 200, 0.75);
+    background: rgba(55, 85, 125, 0.85);
 
-    color: white;
+    border: 1px solid rgba(100, 145, 200, 0.35);
+
+    color: rgba(255, 255, 255, 0.92);
 
     font-size: 0.72rem;
 
@@ -173,7 +175,6 @@ section {
 
     text-transform: uppercase;
 }
-
 
 /* =========================================
    Published Badge ONLY
