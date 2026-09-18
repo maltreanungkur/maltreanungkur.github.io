@@ -15,10 +15,30 @@ I am broadly interested in Representation Theory and Lie Algebra.
 ------
 
 ## Preprints and Current Projects
-1. [*Hecke Algebras and the Kazhdan–Lusztig Theory*](https://maltreanungkur.github.io/about/), **T. Mal** (in preparation).
 
-2. [*Constructions of Macaulay Posets and Macaulay Rings*](https://doi.org/10.37236/14245), P. Beall, E. Boyali, N. Chen, E. Chlachidze, T. T. Dao, F. Garvey, M. Johnson, Y. O. Li, N. Kuzmanovski, K. Ma, **T. Mal**, R. Marasinghe, Q. Mayo, N. Minsky-Primus, A. Seceleanu and S. Veerapaneni.\
-**The Electronic Journal of Combinatorics** *33 (2026),* no. *2, P2.52*. [(arXiv:2502.15166)](https://arxiv.org/abs/2502.15166).
+{{< research-card
+    title="Hecke Algebras and the Kazhdan–Lusztig Theory"
+    subtitle="T. Mal • In preparation"
+    tags="Hecke Algebras|Coxeter Groups|Kazhdan–Lusztig Theory|Representation Theory"
+    report="https://maltreanungkur.github.io/about/"
+>}}
+
+An introduction to representations of Coxeter groups and the Kazhdan–Lusztig theory, with a focus on Hecke algebras and their connections to representation theory.
+
+{{< /research-card >}}
+
+{{< research-card
+    title="Constructions of Macaulay Posets and Macaulay Rings"
+    subtitle="The Electronic Journal of Combinatorics • 33 (2026), no. 2, P2.52"
+    tags="Combinatorics|Macaulay Posets|Macaulay Rings|Posets"
+    report="https://doi.org/10.37236/14245"
+>}}
+
+P. Beall, E. Boyali, N. Chen, E. Chlachidze, T. T. Dao, F. Garvey, M. Johnson, Y. O. Li, N. Kuzmanovski, K. Ma, **T. Mal**, R. Marasinghe, Q. Mayo, N. Minsky-Primus, A. Seceleanu and S. Veerapaneni.
+
+**The Electronic Journal of Combinatorics** *33 (2026),* no. *2, P2.52*. [arXiv:2502.15166](https://arxiv.org/abs/2502.15166).
+
+{{< /research-card >}}
 
 ------
 
