@@ -200,7 +200,7 @@ section {
     font-weight: 700;
 
     /* Slightly softer than pure white */
-    color: rgba(255, 255, 255, 0.80);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 
@@ -510,12 +510,17 @@ section {
 
     line-height: 1.8;
 
-    /*
-       Keep abstract text normal, not italic.
-    */
     font-style: normal;
 
     opacity: 0.90;
+
+    text-align: justify;
+
+    hyphens: auto;
+
+    -webkit-hyphens: auto;
+
+    overflow-wrap: break-word;
 }
 
 
