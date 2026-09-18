@@ -198,6 +198,9 @@ section {
     line-height: 1.45;
 
     font-weight: 700;
+
+    /* Slightly softer than pure white */
+    color: rgba(255, 255, 255, 0.92);
 }
 
 
@@ -236,6 +239,7 @@ section {
 
     opacity: 1;
 }
+
 
 /* Make journal name bold and bright white */
 .research-card-journal strong {
@@ -485,7 +489,7 @@ section {
    ========================================= */
 
 .research-card-expanded {
-    padding: 0 34px 30px 90px;
+    padding: 0 34px 30px 34px;
 
     border-top: 1px solid rgba(100, 140, 200, 0.12);
 }
