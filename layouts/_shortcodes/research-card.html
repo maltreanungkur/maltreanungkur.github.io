@@ -101,12 +101,12 @@
           <button
             type="button"
             class="research-card-button"
-            onclick="event.preventDefault(); event.stopPropagation(); navigator.clipboard.writeText({{ . | jsonify }}); this.innerHTML='✓ Copied BibTeX'; setTimeout(() => this.innerHTML='<span class=&quot;research-card-button-icon copy&quot;><svg viewBox=&quot;0 0 24 24&quot; aria-hidden=&quot;true&quot;><rect x=&quot;9&quot; y=&quot;9&quot; width=&quot;11&quot; height=&quot;11&quot; rx=&quot;2&quot;/><path d=&quot;M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1&quot;/></svg></span> Copy BibTeX', 1800);"
+            onclick="event.preventDefault(); event.stopPropagation(); navigator.clipboard.writeText({{ . | jsonify }}); this.innerHTML='✓ Copied BibTeX'; setTimeout(() => this.innerHTML='<span class=&quot;research-card-button-icon copy&quot;><svg viewBox=&quot;0 0 24 24&quot; aria-hidden=&quot;true&quot;><rect x=&quot;8&quot; y=&quot;8&quot; width=&quot;12&quot; height=&quot;12&quot; rx=&quot;2&quot;/><path d=&quot;M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2&quot;/></svg></span> Copy BibTeX', 1800);"
           >
             <span class="research-card-button-icon copy">
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="9" y="9" width="11" height="11" rx="2"/>
-                <path d="M6 15H5a2 2 0 0 1 2-2V5a2 2 0 0 1 2 2v1"/>
+                <rect x="8" y="8" width="12" height="12" rx="2"/>
+                <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/>
               </svg>
             </span>
             Copy BibTeX
