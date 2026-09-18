@@ -1,0 +1,136 @@
+.research-card {
+  position: relative;
+  display: flex;
+  gap: 22px;
+
+  margin: 32px 0;
+  padding: 28px 30px;
+
+  border: 1px solid rgba(120, 160, 210, 0.35);
+  border-radius: 16px;
+
+  background: rgba(40, 55, 80, 0.35);
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.research-card:hover {
+  border-color: rgba(120, 160, 210, 0.65);
+  transform: translateY(-2px);
+}
+
+
+/* Number */
+
+.research-card-number {
+  flex-shrink: 0;
+
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(100, 120, 150, 0.35);
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* Main content */
+
+.research-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* Title */
+
+.research-card-title {
+  margin: 0;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+
+/* Subtitle */
+
+.research-card-subtitle {
+  margin: 8px 0 0;
+
+  font-size: 0.95rem;
+  opacity: 0.65;
+}
+
+
+/* Tags */
+
+.research-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+.research-card-tag {
+  padding: 7px 16px;
+
+  border-radius: 999px;
+
+  background: rgba(70, 100, 160, 0.3);
+  border: 1px solid rgba(100, 140, 210, 0.3);
+
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+
+/* Description */
+
+.research-card-description {
+  margin-top: 22px;
+
+  line-height: 1.7;
+}
+
+
+/* Plus button */
+
+.research-card-plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  margin-top: 24px;
+  margin-left: auto;
+
+  border-radius: 50%;
+
+  background: rgba(100, 120, 150, 0.35);
+
+  font-size: 24px;
+  line-height: 1;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.research-card-plus:hover {
+  transform: scale(1.08);
+  text-decoration: none;
+}

@@ -1,0 +1,37 @@
+<div class="research-card">
+
+  <div class="research-card-number">
+    {{ add .Ordinal 1 }}
+  </div>
+
+  <div class="research-card-content">
+
+    <h3 class="research-card-title">
+      {{ .Get "title" }}
+    </h3>
+
+    <p class="research-card-subtitle">
+      {{ .Get "subtitle" }}
+    </p>
+
+    <div class="research-card-tags">
+      {{ range split (.Get "tags") "|" }}
+        <span class="research-card-tag">{{ . }}</span>
+      {{ end }}
+    </div>
+
+    {{ with .Inner }}
+    <div class="research-card-description">
+      {{ . | .Page.RenderString }}
+    </div>
+    {{ end }}
+
+    {{ with .Get "report" }}
+    <a href="{{ . }}" class="research-card-plus" aria-label="View details">
+      +
+    </a>
+    {{ end }}
+
+  </div>
+
+</div>
