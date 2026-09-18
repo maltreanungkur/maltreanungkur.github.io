@@ -22,7 +22,7 @@
 
     {{ with .Inner }}
     <div class="research-card-description">
-      {{ . | .Page.RenderString }}
+      {{ . | markdownify }}
     </div>
     {{ end }}
 
