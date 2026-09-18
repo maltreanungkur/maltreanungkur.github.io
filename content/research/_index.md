@@ -15,20 +15,6 @@ I am broadly interested in Representation Theory and Lie Algebra.
 ------
 
 ## Preprints and Current Projects
-
-{{< research-card
-    title="Research Commons"
-    subtitle="Mathematics Research Intern • Remote • Jan–Mar 2025"
-    tags="ODE|PDE|Curriculum Design"
-    report="#"
->}}
-
-Prepared research-oriented learning material for undergraduate students interested in pursuing mathematical research in India.
-
-Designed structured curricula, curated references, and collaborated with undergraduate students from IITs and BITs to make advanced mathematical topics more accessible.
-
-{{< /research-card >}}
-
 1. [*Hecke Algebras and the Kazhdan–Lusztig Theory*](https://maltreanungkur.github.io/about/), **T. Mal** (in preparation).
 
 2. [*Constructions of Macaulay Posets and Macaulay Rings*](https://doi.org/10.37236/14245), P. Beall, E. Boyali, N. Chen, E. Chlachidze, T. T. Dao, F. Garvey, M. Johnson, Y. O. Li, N. Kuzmanovski, K. Ma, **T. Mal**, R. Marasinghe, Q. Mayo, N. Minsky-Primus, A. Seceleanu and S. Veerapaneni.\
