@@ -48,7 +48,14 @@
             rel="noopener noreferrer"
             onclick="event.stopPropagation();"
           >
-            <span>▣</span>
+            <span class="research-card-button-icon pdf">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 2h9l5 5v15H6z"/>
+                <path d="M15 2v6h6"/>
+                <path d="M8 13h8"/>
+                <path d="M8 17h6"/>
+              </svg>
+            </span>
             arXiv
           </a>
         {{ end }}
@@ -62,7 +69,13 @@
             rel="noopener noreferrer"
             onclick="event.stopPropagation();"
           >
-            <span>↗</span>
+            <span class="research-card-button-icon external">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 5h5v5"/>
+                <path d="M10 14L19 5"/>
+                <path d="M19 13v6H5V5h6"/>
+              </svg>
+            </span>
             Journal Page
           </a>
         {{ end }}
@@ -73,7 +86,11 @@
           class="research-card-button"
           onclick="event.preventDefault(); event.stopPropagation(); this.closest('details').open = true;"
         >
-          <span>●</span>
+          <span class="research-card-button-icon abstract">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-1 5h2v6h-2Zm0 8h2v2h-2Z"/>
+            </svg>
+          </span>
           Abstract
         </button>
 
@@ -82,9 +99,14 @@
           <button
             type="button"
             class="research-card-button"
-            onclick="event.preventDefault(); event.stopPropagation(); navigator.clipboard.writeText({{ . | jsonify }}); this.innerHTML='✓ Copied BibTeX'; setTimeout(() => this.innerHTML='<span>▣</span> Copy BibTeX', 1800);"
+            onclick="event.preventDefault(); event.stopPropagation(); navigator.clipboard.writeText({{ . | jsonify }}); this.innerHTML='✓ Copied BibTeX'; setTimeout(() => this.innerHTML='<span class=&quot;research-card-button-icon copy&quot;><svg viewBox=&quot;0 0 24 24&quot; aria-hidden=&quot;true&quot;><rect x=&quot;9&quot; y=&quot;9&quot; width=&quot;11&quot; height=&quot;11&quot; rx=&quot;2&quot;/><path d=&quot;M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1&quot;/></svg></span> Copy BibTeX', 1800);"
           >
-            <span>▣</span>
+            <span class="research-card-button-icon copy">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="9" y="9" width="11" height="11" rx="2"/>
+                <path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"/>
+              </svg>
+            </span>
             Copy BibTeX
           </button>
         {{ end }}
@@ -99,19 +121,19 @@
   </summary>
 
 
- <!-- Expanded abstract -->
-<div class="research-card-expanded">
+  <!-- Expanded abstract -->
+  <div class="research-card-expanded">
 
-  <div class="research-card-abstract">
+    <div class="research-card-abstract">
 
-    {{ $page := .Page }}
+      {{ $page := .Page }}
 
-    {{ with .Inner }}
-      {{ $page.RenderString (strings.TrimSpace .) }}
-    {{ end }}
+      {{ with .Inner }}
+        {{ $page.RenderString (strings.TrimSpace .) }}
+      {{ end }}
+
+    </div>
 
   </div>
-
-</div>
 
 </details>
