@@ -230,6 +230,11 @@ section {
     opacity: 0.70;
 }
 
+/* Make journal name bold when wrapped in <strong> */
+.research-card-journal strong {
+    font-weight: 700;
+}
+
 
 /* =========================================
    Description
@@ -310,8 +315,76 @@ section {
 }
 
 
-.research-card-button span {
+/* =========================================
+   Button Icons
+   ========================================= */
+
+.research-card-button-icon {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+
+    flex-shrink: 0;
+
     font-size: 0.85rem;
+
+    line-height: 1;
+}
+
+
+/* PDF / arXiv icon */
+.research-card-button-icon.pdf {
+    color: #ef4444;
+}
+
+
+/* Journal / external-link icon */
+.research-card-button-icon.external {
+    color: #60a5fa;
+}
+
+
+/* Abstract icon */
+.research-card-button-icon.abstract {
+    color: #60a5fa;
+}
+
+
+/* Copy icon */
+.research-card-button-icon.copy {
+    color: #cbd5e1;
+}
+
+
+/* SVG icons */
+.research-card-button-icon svg {
+    width: 16px;
+    height: 16px;
+
+    fill: none;
+
+    stroke: currentColor;
+    stroke-width: 1.8;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* Abstract icon can use a filled shape */
+.research-card-button-icon.abstract svg path {
+    fill: currentColor;
+    stroke: none;
+}
+
+
+/* Prevent generic button span styling from overriding icons */
+.research-card-button-icon span {
+    font-size: inherit;
 }
 
 
@@ -422,9 +495,33 @@ section {
 
     line-height: 1.8;
 
-    font-style: italic;
+    /*
+       Keep abstract text normal, not italic.
+    */
+    font-style: normal;
 
     opacity: 0.90;
+}
+
+
+/* Prevent Markdown <em> or <i> from making
+   the abstract slanted */
+.research-card-abstract em,
+.research-card-abstract i {
+    font-style: normal;
+}
+
+
+/* =========================================
+   Abstract Markdown / Math
+   ========================================= */
+
+/*
+   Keep links inside the abstract looking natural.
+*/
+.research-card-abstract a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 
@@ -514,6 +611,20 @@ section {
         padding: 8px 11px;
 
         font-size: 0.82rem;
+    }
+
+
+    .research-card-button-icon {
+        width: 15px;
+        height: 15px;
+
+        font-size: 0.8rem;
+    }
+
+
+    .research-card-button-icon svg {
+        width: 15px;
+        height: 15px;
     }
 
 
