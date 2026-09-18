@@ -227,12 +227,23 @@ section {
 
     line-height: 1.7;
 
-    opacity: 0.70;
+    /*
+       Keep the surrounding publication text
+       slightly muted while allowing the
+       journal name itself to stand out.
+    */
+    color: rgba(255, 255, 255, 0.72);
+
+    opacity: 1;
 }
 
-/* Make journal name bold when wrapped in <strong> */
+/* Make journal name bold and bright white */
 .research-card-journal strong {
-    font-weight: 700;
+    color: #ffffff;
+
+    font-weight: 750;
+
+    letter-spacing: 0.01em;
 }
 
 
