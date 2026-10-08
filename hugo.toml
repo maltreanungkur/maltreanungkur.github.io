@@ -1,6 +1,7 @@
 baseURL = "https://maltreanungkur.github.io/"
 languageCode = "en-us"
 title = "Treanungkur Mal"
+enableRobotsTXT = true
 
 [markup]
 
