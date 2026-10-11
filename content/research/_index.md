@@ -10,7 +10,7 @@ showArticles: false
 
 ## Mathematical Interests
 
-I am broadly interested in Representation Theory and Lie Algebra.
+I am broadly interested in representation theory and Lie algebras. I also enjoy studying the connections between combinatorics and representation theory.
 
 ------
 
