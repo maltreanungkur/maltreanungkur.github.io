@@ -43,7 +43,7 @@ description: Hi
     <a href="https://math.washington.edu/">Department of Mathematics</a>
     at the
     <a href="https://www.washington.edu/">University of Washington, Seattle</a>.
-    Previously, I completed my B.Math. at the
+    Previously, I completed my B. Math (Hons.) at the
     <a href="https://www.isibang.ac.in/~statmath/">Indian Statistical Institute, Bangalore</a>,
     where I was advised by
     <a href="https://math.iisc.ac.in/~khare/">Professor Apoorva Khare</a>.
