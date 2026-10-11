@@ -1,5 +1,5 @@
 ---
-title: "Geometric Group Theory (UDGRP 2024)"
+title: "Geometric Group Theory"
 weight: 20
 draft: false
 description: "UDGRP"
@@ -11,7 +11,7 @@ showAuthorBadges: false
 ---
 
 {{< katex >}}
-<div style="text-align: justify">Welcome to the Undergraduate Directed Group Reading Program (UDGRP) 2024! This year, we will explore Geometric Group Theory (GGT).
+<div style="text-align: justify">Welcome to the minicourse on Geometric Group Theory (GGT)! The minicourse will run for about six weeks. We plan to meet atleast once a week, with occasional additional sessions if time permits.
 
 In the initial lectures, we’ll review basic concepts in group theory. We will also provide problem sets periodically. Please make a sincere effort to solve them, as this will prove invaluable in the long run. If you have any doubts, feel free to reach out to any of the instructors; we’re here to help!
 
