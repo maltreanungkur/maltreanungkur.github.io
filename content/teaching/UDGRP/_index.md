@@ -12,7 +12,7 @@ showAuthorBadges: false
 
 {{< katex >}}
 <div style="text-align: justify">Welcome to the minicourse on Geometric Group Theory (GGT)! The minicourse will run for about six weeks. We plan to meet atleast once a week, with occasional additional sessions if time permits.
-
+  
 In the initial lectures, we’ll review basic concepts in group theory. We will also provide problem sets periodically. Please make a sincere effort to solve them, as this will prove invaluable in the long run. If you have any doubts, feel free to reach out to any of the instructors; we’re here to help!
 
 To make things more engaging, we’ll introduce a “Chocolate Problem” at the end of each class. Anyone who gives an honest attempt (partial or even incomplete) will be rewarded with chocolates! Our goal with this approach is to encourage you to engage with the material actively. To me, mathematics is a subject where simply knowing the theory isn’t enough. One must learn how to apply it effectively, and the best way to do so is to solve as many problems as possible.
