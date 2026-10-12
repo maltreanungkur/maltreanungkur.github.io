@@ -18,6 +18,11 @@ In the initial lectures, we’ll review basic concepts in group theory. We will 
 To make things more engaging, we’ll introduce a “Chocolate Problem” at the end of each class. Anyone who gives an honest attempt (partial or even incomplete) will be rewarded with chocolates! Our goal with this approach is to encourage you to engage with the material actively. To me, mathematics is a subject where simply knowing the theory isn’t enough. One must learn how to apply it effectively, and the best way to do so is to solve as many problems as possible.
 
 You’ll find recorded lectures, notes, and problem sets on this website. If you miss a lecture, don’t worry, we’ll keep everything updated here so that you can catch up.
+
+**Participants:** Agaman Banerjee, Akshat Mishra, Arkaprovo Das, Bodhideep Joardar, Gauransh Kapur, Kalmanje Avyaktha Achar, Mohaideen Abdul Khadir M, Naveen Kumar G, Nikhil Nagaria, Payal Rajora, Rajvardhan Singh Sisodiya, Ramdas Singh, Sankha Subhro Dam, Sarvesh Soni, Sayan Dewan, V Sai Prabhav, Yuvraj Singh Rajpurohit.
+
+I would like to thank all the students who patiently attended the lectures over the course of six weeks and asked such wonderful questions. It was a pleasure discussing mathematics with you all!
+
 </div>
 
 ## Timeline
