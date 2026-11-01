@@ -39,7 +39,7 @@ description: Hi
 
 <div class="about-text">
   <p>
-    I am a first-year Ph.D. student in mathematics at the <a href="https://math.washington.edu/">University of Washington, Seattle</a>. Before coming to Seattle, I completed my Bachelor of Mathematics (Honors) at the <a href="https://www.isibang.ac.in/~statmath/">Indian Statistical Institute, Bangalore</a>, where I was advised by <a href="https://math.iisc.ac.in/~khare/">Professor Apoorva Khare</a>.
+    Hi there! I am a first-year Ph.D. student in mathematics at the <a href="https://math.washington.edu/">University of Washington, Seattle</a>. Before coming to Seattle, I completed my Bachelor of Mathematics (Honors) at the <a href="https://www.isibang.ac.in/~statmath/">Indian Statistical Institute, Bangalore</a>, where I was advised by <a href="https://math.iisc.ac.in/~khare/">Professor Apoorva Khare</a>.
   </p>
 
   <p>I am interested in representation theory.</p>
