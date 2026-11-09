@@ -39,9 +39,7 @@ description: Hi
 
 <div class="about-text">
   <p>
-    Hi there! I am a first-year Ph.D. student in the
-    <a href="https://math.washington.edu/">Department of Mathematics</a>
-    at the
+    Hi there! I am a first-year Ph.D. student in mathematics at the
     <a href="https://www.washington.edu/">University of Washington, Seattle</a>.
     Before coming to Seattle, I completed my B.Math (Hons.) at the
     <a href="https://www.isibang.ac.in/~statmath/">Indian Statistical Institute, Bangalore</a>,
