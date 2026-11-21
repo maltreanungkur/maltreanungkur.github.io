@@ -299,3 +299,31 @@ body:has(#tm-compact-section-marker) #menu-blur{
     margin-right:auto!important;
   }
 }
+
+/* Align the copy icon with the email PNG's visual baseline. */
+.tm-hero .tm-content .tm-email-row .tm-copy-email{
+ position:relative!important;
+ top:5px!important;
+ display:inline-flex!important;
+ align-items:center!important;
+ justify-content:center!important;
+ line-height:1!important;
+ min-height:24px;
+ padding:0!important;
+ margin:0!important;
+ cursor:pointer;
+}
+/* Small, unobtrusive confirmation on both mobile and desktop. */
+#tm-copy-toast{
+ position:fixed;left:50%;bottom:30px;transform:translate(-50%,12px);
+ z-index:9999;padding:10px 16px;border-radius:9px;
+ background:#263b56;color:#f1f5ff;border:1px solid #5d7290;
+ box-shadow:0 6px 24px rgba(0,0,0,.35);
+ font:500 14px/1.4 ui-sans-serif,system-ui,sans-serif;
+ text-align:center;max-width:calc(100vw - 32px);
+ opacity:0;visibility:hidden;pointer-events:none;
+ transition:opacity .2s ease,transform .2s ease,visibility .2s;
+}
+#tm-copy-toast.tm-visible{
+ opacity:1;visibility:visible;transform:translate(-50%,0);
+}
