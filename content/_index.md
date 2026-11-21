@@ -43,7 +43,7 @@ description: Hi
     <a href="https://www.washington.edu/">University of Washington, Seattle</a>.
     Before coming to Seattle, I completed my B.Math (Hons.) at the
     <a href="https://www.isibang.ac.in/~statmath/">Indian Statistical Institute, Bangalore</a>,
-    where I was advised by
+    where I was advised <a href="https://math.iisc.ac.in/~khare/">trmal@uw.edu</a>. by
     <a href="https://math.iisc.ac.in/~khare/">Professor Apoorva Khare</a>.
   </p>
 
