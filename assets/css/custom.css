@@ -675,3 +675,7 @@ section {
     }
 
 }
+
+/* Official arXiv X logomark in research-card buttons. */
+.research-card-button-icon.arxiv-brand{width:18px;height:18px;overflow:hidden;flex:0 0 18px;border-radius:2px}
+.research-card-button-icon.arxiv-brand img{display:block;width:18px;height:18px;object-fit:cover;margin:0}
