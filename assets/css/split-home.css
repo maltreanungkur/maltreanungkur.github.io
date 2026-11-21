@@ -246,7 +246,7 @@ body:has(#tm-compact-section-marker) #main-content>article{margin-top:-38px!impo
 
 /* Nudge the email PNG down to align visually with the Email label. */
 .tm-hero .tm-content .tm-email-original img{
- transform:translateY(3px)!important;
+ transform:translateY(3.75px)!important;
 }
 
 /* Consistent gradual frosted navigation on Home, Research, Teaching, and other pages.
