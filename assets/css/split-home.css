@@ -113,3 +113,22 @@ body:has(#tm-compact-section-marker) #main-content > article{margin-top:-82px!im
  body:has(#tm-compact-section-marker) #main-content > header,
  body:has(#tm-compact-section-marker) #main-content > article{margin-top:-65px!important}
 }
+
+/* Final shared background rendering: exactly the homepage blur and tint. */
+body:has(#tm-compact-section-marker){background-color:#0b1e34!important}
+body:has(#tm-compact-section-marker)::before{
+ background-image:var(--tm-background-image,none)!important;
+ filter:blur(4px)!important;opacity:.58!important;
+ transform:scale(1.025);z-index:0!important;
+}
+body:has(#tm-compact-section-marker)::after{
+ content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+ background:rgba(8,23,43,.43);
+}
+body:has(#tm-compact-section-marker)>div.relative{z-index:1}
+body:has(#tm-compact-section-marker) #main-content>header,
+body:has(#tm-compact-section-marker) #main-content>article{margin-top:-38px!important}
+@media(max-width:767px){
+ body:has(#tm-compact-section-marker) #main-content>header,
+ body:has(#tm-compact-section-marker) #main-content>article{margin-top:-25px!important}
+}
