@@ -191,3 +191,12 @@ body:has(#tm-compact-section-marker) #main-content>article{margin-top:-38px!impo
  margin:0!important;
 }
 .tm-hero .tm-content .tm-email-row button{flex:0 0 auto;line-height:1!important}
+
+/* Exact user-supplied raster email image: preserve native proportions. */
+.tm-hero .tm-content .tm-email-original{
+ width:148px!important;height:auto!important;align-items:center;
+}
+.tm-hero .tm-content .tm-email-original img{
+ width:148px!important;height:auto!important;aspect-ratio:585/111!important;
+ max-width:148px!important;object-fit:contain!important;
+}
