@@ -2,11 +2,11 @@
 .tm-home-background{position:fixed;inset:0;z-index:-10;pointer-events:none;overflow:hidden;background:#0b1e34}
 .tm-home-background>img{width:100%;height:100%;object-fit:cover;filter:blur(4px);opacity:.58;transform:scale(1.025)}
 .tm-home-overlay{position:absolute;inset:0;background:rgba(8,23,43,.43)}
-.tm-hero{position:relative;display:grid;grid-template-columns:minmax(0,1.65fr) 1px minmax(0,.87fr);gap:clamp(20px,3.2vw,50px);align-items:center;max-width:1390px;margin:0 auto;padding:60px 32px 85px;min-height:660px}
+.tm-hero{position:relative;display:grid;grid-template-columns:minmax(0,1.65fr) 1px minmax(0,.87fr);gap:clamp(20px,3.2vw,50px);align-items:start;max-width:1390px;margin:0 auto;padding:24px 32px 55px;min-height:0}
 .tm-hero .tm-left{text-align:left;min-width:0}
 .tm-hero .tm-accent{width:70px;height:5px;border-radius:6px;background:#a995ff;margin-bottom:23px}
-.tm-hero h1{font-family:Georgia,serif;font-size:clamp(36px,3.6vw,58px);line-height:1.13;letter-spacing:-.02em;margin:0 0 13px;color:#f3f5fc}
-.tm-hero .tm-subtitle{font:600 clamp(18px,1.65vw,25px)/1.35 Georgia,serif;color:#d7e1f2;margin:0}
+.tm-hero h1{font-family:inherit;font-size:clamp(36px,3.3vw,54px);line-height:1.13;letter-spacing:-.02em;margin:0 0 13px;color:#f3f5fc}
+.tm-hero .tm-subtitle{font:700 clamp(18px,1.55vw,24px)/1.35 inherit;color:#d7e1f2;margin:0}
 .tm-hero .tm-social{display:flex;gap:17px;align-items:center;flex-wrap:wrap;margin:28px 0}
 .tm-hero .tm-social a{display:inline-flex;color:#d6e5fb;align-items:center;justify-content:center;width:25px;height:25px}
 .tm-hero .tm-social a:hover{color:#aa98fa}
@@ -19,7 +19,7 @@
 .tm-hero .tm-content .about-text p{text-align:left;hyphens:none}
 .tm-hero .tm-content .contact-item{font-size:17px}
 .tm-hero .tm-divider{height:410px;width:1px;background:linear-gradient(to bottom,transparent,rgba(204,217,239,.3),transparent)}
-.tm-hero .tm-photo{width:100%;max-width:390px;aspect-ratio:.88;border:1px solid rgba(220,230,246,.72);border-radius:20px;overflow:hidden;justify-self:center;background:#273343}
+.tm-hero .tm-photo{width:100%;max-width:390px;aspect-ratio:.88;border:1px solid rgba(220,230,246,.72);border-radius:20px;overflow:hidden;justify-self:center;margin-top:90px;background:#273343}
 .tm-hero .tm-photo img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;margin:0}
 .tm-hero .tm-actions{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px}
 .tm-hero .tm-action{display:inline-flex;align-items:center;gap:12px;justify-content:center;padding:10px 24px;border-radius:7px;min-height:46px;font-size:16px;font-weight:500;text-decoration:none!important;transition:background .2s,transform .2s}
@@ -30,3 +30,13 @@
 .tm-hero .tm-secondary:hover{background:rgba(190,205,240,.12)}
 .tm-hero .tm-action svg{height:18px;width:18px}
 @media(max-width:850px){.tm-hero{grid-template-columns:1fr;min-height:0;padding:45px 18px 65px;gap:28px}.tm-hero .tm-divider{display:none}.tm-hero .tm-photo{max-width:390px}.tm-hero .tm-content{font-size:16px}}
+
+/* Keep the original Blowfish typography, and prevent negative inline contact
+   margins from pulling the email/office rows over each other. */
+.tm-hero,.tm-hero h1,.tm-hero .tm-subtitle,.tm-hero .tm-content{font-family:inherit}
+.tm-hero .tm-content .about-text h3{margin:20px 0 12px!important;line-height:1.35}
+.tm-hero .tm-content .about-text p.contact-item{margin:0 0 14px!important;line-height:1.6;overflow-wrap:anywhere}
+.tm-hero .tm-content .about-text p.contact-item span{transform:none!important;vertical-align:middle}
+.tm-hero .tm-content .about-text p.contact-item img{display:inline-block;vertical-align:middle}
+.tm-hero .tm-content .about-text p.contact-item button{vertical-align:middle}
+@media(max-width:850px){.tm-hero{padding-top:22px}.tm-hero .tm-photo{margin-top:0}}
