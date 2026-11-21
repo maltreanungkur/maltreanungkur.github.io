@@ -230,3 +230,16 @@ body:has(#tm-compact-section-marker) #main-content>article{margin-top:-38px!impo
  .tm-hero .tm-content .tm-email-original{width:105px!important;flex-basis:105px!important}
  .tm-hero .tm-content .tm-email-original img{width:105px!important;max-width:105px!important}
 }
+
+/* Slightly larger email image: midpoint between previous 112px and 148px. */
+.tm-hero .tm-content .tm-email-original{
+ width:126px!important;flex:0 0 126px!important;height:24px!important;
+}
+.tm-hero .tm-content .tm-email-original img{
+ width:126px!important;max-width:126px!important;height:auto!important;
+ aspect-ratio:585/111!important;
+}
+@media(max-width:400px){
+ .tm-hero .tm-content .tm-email-original{width:120px!important;flex-basis:120px!important}
+ .tm-hero .tm-content .tm-email-original img{width:120px!important;max-width:120px!important}
+}
