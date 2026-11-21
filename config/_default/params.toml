@@ -32,7 +32,7 @@ showAppearanceSwitcher = false
 showScrollToTop = true
 
 [homepage]
-layout = "background"
+layout = "split"
 showRecent = false
 showRecentItems = 2
 showMoreLink = false
