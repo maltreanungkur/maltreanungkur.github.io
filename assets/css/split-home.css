@@ -200,3 +200,33 @@ body:has(#tm-compact-section-marker) #main-content>article{margin-top:-38px!impo
  width:148px!important;height:auto!important;aspect-ratio:585/111!important;
  max-width:148px!important;object-fit:contain!important;
 }
+
+/* Final email alignment: same visual text height as the 17px contact text.
+   Keep the exact PNG, its underline, and the copy icon on one baseline. */
+.tm-hero .tm-content .tm-email-contact{
+ display:flex!important;align-items:baseline!important;flex-wrap:nowrap!important;
+ column-gap:7px!important;
+}
+.tm-hero .tm-content .tm-email-contact>strong{flex:0 0 auto}
+.tm-hero .tm-content .tm-email-row{
+ display:inline-flex!important;align-items:center!important;
+ flex-wrap:nowrap!important;white-space:nowrap!important;
+ margin:0!important;gap:7px!important;
+ vertical-align:baseline!important;
+}
+.tm-hero .tm-content .tm-email-original{
+ width:112px!important;height:22px!important;flex:0 0 112px!important;
+ display:inline-flex!important;align-items:center!important;
+}
+.tm-hero .tm-content .tm-email-original img{
+ width:112px!important;max-width:112px!important;
+ height:auto!important;aspect-ratio:585/111!important;
+ display:block!important;margin:0!important;
+}
+.tm-hero .tm-content .tm-email-row button{
+ align-self:center!important;margin:0!important;line-height:1!important;
+}
+@media(max-width:400px){
+ .tm-hero .tm-content .tm-email-original{width:105px!important;flex-basis:105px!important}
+ .tm-hero .tm-content .tm-email-original img{width:105px!important;max-width:105px!important}
+}
