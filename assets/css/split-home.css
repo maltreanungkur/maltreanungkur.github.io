@@ -280,3 +280,22 @@ body:has(#tm-compact-section-marker) #menu-blur{
     text-wrap:balance;
   }
 }
+
+/* Center the name and the complete five-icon social row on mobile. */
+@media (max-width:850px){
+  .tm-hero .tm-name,
+  .tm-hero h1{
+    text-align:center!important;
+    width:100%;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    text-wrap:balance;
+  }
+  .tm-hero .tm-social{
+    width:100%;
+    justify-content:center!important;
+    align-items:center!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+}
