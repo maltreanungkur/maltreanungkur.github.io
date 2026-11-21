@@ -269,3 +269,14 @@ body:has(#tm-compact-section-marker) #menu-blur{
   visibility:visible!important;
   z-index:0!important;
 }
+
+/* Center the graduate-student subtitle on phones, including wrapped lines. */
+@media (max-width:850px){
+  .tm-hero .tm-subtitle{
+    text-align:center!important;
+    width:100%;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    text-wrap:balance;
+  }
+}
