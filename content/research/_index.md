@@ -19,18 +19,6 @@ I am broadly interested in representation theory and Lie algebras. I also enjoy 
 {{< katex >}}
 
 {{< research-card
-    status="IN PREPARATION"
-    title="Hecke Algebras and the Kazhdan–Lusztig Theory"
-    authors="**T. Mal**"
-    bibtex="@misc{mal_hecke, author={Mal, Treanungkur}, title={Hecke Algebras and the Kazhdan--Lusztig Theory}, note={In preparation}}"
->}}
-
-This thesis presents a detailed exposition of the seminal 1979 paper by Kazhdan and Lusztig [KL79](https://link.springer.com/article/10.1007/BF01390031), in which they introduced conjectural formulas for the characters of irreducible representations of semisimple Lie algebras via the Kazhdan–Lusztig polynomials. While classical developments increasingly rely on geometric methods, this thesis returns to the original algebraic foundations of the theory for arbitrary Coxeter systems. We begin with a systematic treatment of Coxeter groups, emphasizing their algebraic, combinatorial, and structural properties. Building on this foundation, we construct the associated Hecke algebra and derive the Kazhdan–Lusztig basis and polynomials through the bar involution and \(R\)-polynomials. Finally, we investigate the structure of Kazhdan–Lusztig cells, highlighting the role of Lusztig’s distinguished involutions and their relevance to the representation theory of Hecke algebras.
-
-{{< /research-card >}}
-
-
-{{< research-card
     status="PUBLISHED"
     title="Constructions of Macaulay Posets and Macaulay Rings"
     authors="P. Beall, E. Boyali, N. Chen, E. Chlachidze, T. T. Dao, F. Garvey, M. Johnson, Y. O. Li, N. Kuzmanovski, K. Ma, **T. Mal**, R. Marasinghe, Q. Mayo, N. Minsky-Primus, A. Seceleanu and S. Veerapaneni."
@@ -44,6 +32,17 @@ A poset is Macaulay if its partial order and an additional total order interact 
 
 {{< /research-card >}}
 
+
+{{< research-card
+    status="Available on Request"
+    title="Hecke Algebras and the Kazhdan–Lusztig Theory"
+    authors="**T. Mal**"
+    bibtex="@misc{mal_hecke, author={Mal, Treanungkur}, title={Hecke Algebras and the Kazhdan--Lusztig Theory}, note={In preparation}}"
+>}}
+
+This thesis presents a detailed exposition of the seminal 1979 paper by Kazhdan and Lusztig [KL79](https://link.springer.com/article/10.1007/BF01390031), in which they introduced conjectural formulas for the characters of irreducible representations of semisimple Lie algebras via the Kazhdan–Lusztig polynomials. While classical developments increasingly rely on geometric methods, this thesis returns to the original algebraic foundations of the theory for arbitrary Coxeter systems. We begin with a systematic treatment of Coxeter groups, emphasizing their algebraic, combinatorial, and structural properties. Building on this foundation, we construct the associated Hecke algebra and derive the Kazhdan–Lusztig basis and polynomials through the bar involution and \(R\)-polynomials. Finally, we investigate the structure of Kazhdan–Lusztig cells, highlighting the role of Lusztig’s distinguished involutions and their relevance to the representation theory of Hecke algebras.
+
+{{< /research-card >}}
 
 ------
 
