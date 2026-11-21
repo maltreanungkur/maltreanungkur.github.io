@@ -55,3 +55,27 @@
 .tm-hero .tm-accent{display:none!important}
 .tm-hero{padding-top:6px!important}
 @media(max-width:850px){.tm-hero{padding-top:8px!important}}
+
+/* Consistent vertical rhythm across homepage, Research and Teaching. */
+@media(min-width:851px){
+  .tm-hero{margin-top:-42px}
+  .tm-hero .tm-divider{align-self:start;margin-top:90px;height:min(443px,calc(100% - 90px))}
+}
+@media(max-width:850px){.tm-hero{margin-top:-12px}}
+/* Blowfish background hero reserves 200px above Research and Teaching;
+   cut that spacer roughly in half without changing their content. */
+#hero{height:95px!important}
+@media(max-width:767px){#hero{height:72px!important}}
+/* Balance the original theme's hero image against the darker homepage. */
+#background-image{filter:brightness(.53) blur(2px)}
+#background-blur{background-color:rgba(8,23,43,.65)!important}
+/* Keep homepage paragraphs visually aligned, with hyphenation where useful.
+   Contact rows stay left-aligned so addresses and email remain readable. */
+.tm-hero .tm-content .about-text p:not(.contact-item){
+ text-align:justify;
+ text-justify:inter-word;
+ hyphens:auto;
+ -webkit-hyphens:auto;
+ overflow-wrap:break-word;
+}
+.tm-hero .tm-content .about-text p.contact-item{text-align:left;hyphens:none}
