@@ -79,3 +79,17 @@
  overflow-wrap:break-word;
 }
 .tm-hero .tm-content .about-text p.contact-item{text-align:left;hyphens:none}
+
+/* Research and Teaching only: remove Blowfish's reserved hero gap completely.
+   The fixed navbar still provides its own space above the page. */
+body:has(#tm-compact-section-marker) #hero{height:0!important;min-height:0!important;display:none!important}
+body:has(#tm-compact-section-marker) header h1{margin-top:0!important}
+body:has(#tm-compact-section-marker) #background-image{
+ filter:brightness(.38) blur(4px)!important;
+}
+body:has(#tm-compact-section-marker) #background-blur{
+ background-color:rgba(8,23,43,.78)!important;
+}
+body:has(#tm-compact-section-marker) .single_hero_background{
+ opacity:.9;
+}
