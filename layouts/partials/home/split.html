@@ -1,0 +1,43 @@
+{{/* Version 5 homepage: Blowfish owns header, navigation, search and other pages. */}}
+{{ $photo := resources.Get (.Site.Params.Author.image | default "img/logo.jpg") }}
+{{ $background := resources.Get (.Site.Params.defaultBackgroundImage | default "img/background.jpg") }}
+{{ with $background }}
+  <div class="tm-home-background" aria-hidden="true">
+    <img src="{{ .RelPermalink }}" alt="" class="nozoom">
+    <div class="tm-home-overlay"></div>
+  </div>
+{{ end }}
+<section class="tm-hero" aria-label="Introduction">
+  <div class="tm-left">
+    <div class="tm-accent"></div>
+    <h1>{{ .Site.Params.Author.name | default .Site.Title }}</h1>
+    <p class="tm-subtitle">{{ .Site.Params.Author.headline | markdownify }}</p>
+    <div class="tm-social">
+      {{ range .Site.Params.Author.links }}
+        {{ range $name, $url := . }}
+          {{ $isEmail := eq $name "email" }}
+          <a href="{{ cond $isEmail "#" ($url | safeURL) }}"
+             {{ if $isEmail }}class="email-link" data-email="{{ $url | base64Encode }}" data-subject="Contact"{{ end }}
+             target="_blank" rel="me noopener noreferrer"
+             aria-label="{{ $name | title }}" title="{{ $name | title }}">
+            {{ partial "icon.html" $name }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+    <div class="tm-content">{{ .Content }}</div>
+    <div class="tm-actions">
+      <a class="tm-action tm-primary" href="{{ "research/" | relURL }}">Research
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+      </a>
+      <a class="tm-action tm-secondary" href="{{ "cv/" | relURL }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2-2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h8"/></svg>
+        CV
+      </a>
+    </div>
+  </div>
+  <div class="tm-divider" aria-hidden="true"></div>
+  <div class="tm-photo">
+    {{ with $photo }}<img src="{{ .RelPermalink }}" alt="Treanungkur Mal" class="nozoom" loading="eager">{{ end }}
+  </div>
+</section>
