@@ -156,3 +156,10 @@ body:has(#tm-compact-section-marker) #main-content>article{margin-top:-38px!impo
  background:none;border:0;padding:0;cursor:pointer;
  color:inherit;font-size:1em;
 }
+
+/* Single image-only email address, naturally cropped to its text. */
+.tm-hero .tm-content .tm-email-original img{
+ display:block!important;width:148px!important;height:27px!important;
+ max-width:100%;object-fit:contain;vertical-align:middle;
+}
+.tm-hero .tm-content .tm-email-row{gap:8px}
