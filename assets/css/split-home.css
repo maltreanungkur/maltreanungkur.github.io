@@ -93,3 +93,23 @@ body:has(#tm-compact-section-marker) #background-blur{
 body:has(#tm-compact-section-marker) .single_hero_background{
  opacity:.9;
 }
+
+/* Research and Teaching: same background image and overlay as the homepage.
+   The legacy Blowfish hero and animated blur are hidden only on these pages. */
+body:has(#tm-compact-section-marker)::before{
+ content:"";position:fixed;inset:0;z-index:-9;pointer-events:none;
+ background-color:#0b1e34;
+ background-image:linear-gradient(rgba(8,23,43,.43),rgba(8,23,43,.43)),var(--tm-background-image,none);
+ background-size:cover;background-position:center;
+ filter:none;
+}
+body:has(#tm-compact-section-marker) .single_hero_background{display:none!important}
+body:has(#tm-compact-section-marker) #hero{display:none!important}
+body:has(#tm-compact-section-marker) #main-content > article,
+body:has(#tm-compact-section-marker) #main-content > header{position:relative;z-index:1}
+body:has(#tm-compact-section-marker) #main-content > header{margin-top:-82px!important}
+body:has(#tm-compact-section-marker) #main-content > article{margin-top:-82px!important}
+@media(max-width:767px){
+ body:has(#tm-compact-section-marker) #main-content > header,
+ body:has(#tm-compact-section-marker) #main-content > article{margin-top:-65px!important}
+}
