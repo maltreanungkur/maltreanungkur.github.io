@@ -1,2 +1,2 @@
 <meta name="google-site-verification" content="ef6-D_ob-NiBe13F5So4DsGVeRaPWUORjgJpFOIJmz4" />
-{{ if .IsHome }}{{ with resources.Get "css/split-home.css" }}<style>{{ .Content | safeCSS }}</style>{{ end }}{{ end }}
+{{ with resources.Get "css/split-home.css" }}<style>{{ .Content | safeCSS }}</style>{{ end }}
