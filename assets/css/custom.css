@@ -711,3 +711,8 @@ section {
 .research-card-button-icon.arxiv-brand{width:19px!important;height:19px!important;flex:0 0 19px!important}
 .research-card-button-icon.arxiv-brand svg{width:19px!important;height:19px!important}
 @media(max-width:650px){.research-card-button-icon.arxiv-brand{width:17px!important;height:17px!important;flex-basis:17px!important}.research-card-button-icon.arxiv-brand svg{width:17px!important;height:17px!important}}
+
+/* Final 8% reduction from 19px arXiv mark. */
+.research-card-button-icon.arxiv-brand{width:17.5px!important;height:17.5px!important;flex:0 0 17.5px!important}
+.research-card-button-icon.arxiv-brand svg{width:17.5px!important;height:17.5px!important}
+@media(max-width:650px){.research-card-button-icon.arxiv-brand{width:15.5px!important;height:15.5px!important;flex-basis:15.5px!important}.research-card-button-icon.arxiv-brand svg{width:15.5px!important;height:15.5px!important}}
