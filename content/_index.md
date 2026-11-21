@@ -57,7 +57,7 @@ description: Hi
       <a href="mailto:trmal@uw.edu" class="tm-email-original" aria-label="Email trmal@uw.edu">
         <img src="/images/email-exact.png" alt="trmal@uw.edu" class="nozoom">
       </a>
-      <button type="button" title="Copy email" aria-label="Copy email address" onclick="navigator.clipboard.writeText('trmal@uw.edu');return false;">⧉</button>
+      <button type="button" class="tm-copy-email" data-email="trmal@uw.edu" title="Copy email" aria-label="Copy email address">⧉</button>
     </span>
   </p>
 
