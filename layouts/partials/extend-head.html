@@ -3,3 +3,5 @@
   {{ with resources.Get "img/background.jpg" }}
     <style>body{--tm-background-image:url('{{ .RelPermalink }}');}</style>
   {{ end }}
+
+<script defer src="{{ "js/email-copy.js" | relURL }}"></script>
