@@ -132,3 +132,27 @@ body:has(#tm-compact-section-marker) #main-content>article{margin-top:-38px!impo
  body:has(#tm-compact-section-marker) #main-content>header,
  body:has(#tm-compact-section-marker) #main-content>article{margin-top:-25px!important}
 }
+
+/* Muted grey academic links, matching the reference site's understated styling. */
+.tm-hero .tm-content .about-text a:not(.tm-email-original){
+ color:#aeb9c9!important;
+ text-decoration-color:#8291a5!important;
+ text-decoration-thickness:1px;
+ text-underline-offset:3px;
+}
+.tm-hero .tm-content .about-text a:hover{color:#d5dfed!important}
+.tm-hero .tm-content .tm-email-contact{margin-top:8px!important}
+.tm-hero .tm-content .tm-email-row{
+ display:flex!important;align-items:center;gap:12px;
+ margin:7px 0 0!important;transform:none!important;
+ flex-wrap:wrap;white-space:normal!important;
+}
+.tm-hero .tm-content .tm-email-plain{
+ font-size:inherit;font-weight:400;text-decoration:underline;
+}
+.tm-hero .tm-content .tm-email-original{display:inline-flex;align-items:center}
+.tm-hero .tm-content .tm-email-original img{height:1.15em!important;width:auto!important}
+.tm-hero .tm-content .tm-email-row button{
+ background:none;border:0;padding:0;cursor:pointer;
+ color:inherit;font-size:1em;
+}
