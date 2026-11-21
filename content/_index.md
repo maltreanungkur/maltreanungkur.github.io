@@ -54,9 +54,8 @@ description: Hi
   <p class="contact-item tm-email-contact">
     <strong>Email:</strong>
     <span class="tm-email-row">
-      <a href="mailto:trmal@uw.edu" class="tm-email-plain">trmal@uw.edu</a>
-      <a href="mailto:trmal@uw.edu" class="tm-email-original" aria-label="Email image">
-        <img src="/images/email.png" alt="Email" class="nozoom" style="height:1.5em;width:auto;">
+      <a href="mailto:trmal@uw.edu" class="tm-email-original" aria-label="Email trmal@uw.edu">
+        <img src="/images/email-text.svg" alt="trmal@uw.edu" class="nozoom">
       </a>
       <button type="button" title="Copy email" aria-label="Copy email address" onclick="navigator.clipboard.writeText('trmal@uw.edu');return false;">⧉</button>
     </span>
