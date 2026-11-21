@@ -1,5 +1,5 @@
 <meta name="google-site-verification" content="ef6-D_ob-NiBe13F5So4DsGVeRaPWUORjgJpFOIJmz4" />
 {{ with resources.Get "css/split-home.css" }}<style>{{ .Content | safeCSS }}</style>{{ end }}
   {{ with resources.Get "img/background.jpg" }}
-    <style>.tm-section-backdrop{background-image:linear-gradient(rgba(8,23,43,.43),rgba(8,23,43,.43)),url('{{ .RelPermalink }}');}</style>
+    <style>body{--tm-background-image:url('{{ .RelPermalink }}');}</style>
   {{ end }}
