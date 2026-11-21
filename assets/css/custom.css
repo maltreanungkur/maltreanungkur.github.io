@@ -679,3 +679,13 @@ section {
 /* Official arXiv X logomark in research-card buttons. */
 .research-card-button-icon.arxiv-brand{width:18px;height:18px;overflow:hidden;flex:0 0 18px;border-radius:2px}
 .research-card-button-icon.arxiv-brand img{display:block;width:18px;height:18px;object-fit:cover;margin:0}
+
+/* Remove the white field from the official arXiv mark on dark buttons.
+   Inverted white becomes black; screen blending makes it transparent. */
+.research-card-button-icon.arxiv-brand{background:transparent!important;border-radius:0!important;overflow:visible!important}
+.research-card-button-icon.arxiv-brand img{
+  background:transparent!important;
+  filter:invert(1) brightness(2.2) contrast(1.25)!important;
+  mix-blend-mode:screen!important;
+  border-radius:0!important;
+}
