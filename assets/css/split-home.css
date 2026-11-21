@@ -5,8 +5,8 @@
 .tm-hero{position:relative;display:grid;grid-template-columns:minmax(0,1.65fr) 1px minmax(0,.87fr);gap:clamp(20px,3.2vw,50px);align-items:start;max-width:1390px;margin:0 auto;padding:24px 32px 55px;min-height:0}
 .tm-hero .tm-left{text-align:left;min-width:0}
 .tm-hero .tm-accent{width:70px;height:5px;border-radius:6px;background:#a995ff;margin-bottom:23px}
-.tm-hero h1{font-family:inherit;font-size:clamp(36px,3.3vw,54px);line-height:1.13;letter-spacing:-.02em;margin:0 0 13px;color:#f3f5fc}
-.tm-hero .tm-subtitle{font:700 clamp(18px,1.55vw,24px)/1.35 inherit;color:#d7e1f2;margin:0}
+.tm-hero h1{font-size:clamp(32px,2.8vw,43px);font-weight:800;line-height:1.2;letter-spacing:normal;margin:0 0 10px;color:#e5e7eb}
+.tm-hero .tm-subtitle{font-size:clamp(18px,1.45vw,22px);font-weight:500;line-height:1.4;color:#d1d5db;margin:0}
 .tm-hero .tm-social{display:flex;gap:17px;align-items:center;flex-wrap:wrap;margin:28px 0}
 .tm-hero .tm-social a{display:inline-flex;color:#d6e5fb;align-items:center;justify-content:center;width:25px;height:25px}
 .tm-hero .tm-social a:hover{color:#aa98fa}
@@ -33,10 +33,20 @@
 
 /* Keep the original Blowfish typography, and prevent negative inline contact
    margins from pulling the email/office rows over each other. */
-.tm-hero,.tm-hero h1,.tm-hero .tm-subtitle,.tm-hero .tm-content{font-family:inherit}
+.tm-hero,.tm-hero h1,.tm-hero .tm-subtitle,.tm-hero .tm-content{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
 .tm-hero .tm-content .about-text h3{margin:20px 0 12px!important;line-height:1.35}
 .tm-hero .tm-content .about-text p.contact-item{margin:0 0 14px!important;line-height:1.6;overflow-wrap:anywhere}
 .tm-hero .tm-content .about-text p.contact-item span{transform:none!important;vertical-align:middle}
 .tm-hero .tm-content .about-text p.contact-item img{display:inline-block;vertical-align:middle}
 .tm-hero .tm-content .about-text p.contact-item button{vertical-align:middle}
 @media(max-width:850px){.tm-hero{padding-top:22px}.tm-hero .tm-photo{margin-top:0}}
+
+/* On phones, show the photograph first, then the complete introduction. */
+@media(max-width:850px){
+ .tm-hero{display:flex;flex-direction:column;align-items:stretch;gap:22px}
+ .tm-hero .tm-photo{order:0;align-self:center;width:min(100%,340px);margin:0 auto}
+ .tm-hero .tm-left{order:1;width:100%}
+ .tm-hero .tm-divider{display:none}
+ .tm-hero h1{font-size:34px}
+ .tm-hero .tm-subtitle{font-size:19px}
+}
