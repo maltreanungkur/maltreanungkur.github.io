@@ -103,7 +103,7 @@ body:has(#tm-compact-section-marker)::before{
  background-size:cover;background-position:center;
  filter:none;
 }
-body:has(#tm-compact-section-marker) .single_hero_background{display:none!important}
+body:has(#tm-compact-section-marker) .single_hero_background:not(#menu-blur){display:none!important}
 body:has(#tm-compact-section-marker) #hero{display:none!important}
 body:has(#tm-compact-section-marker) #main-content > article,
 body:has(#tm-compact-section-marker) #main-content > header{position:relative;z-index:1}
@@ -257,4 +257,11 @@ body:has(#tm-compact-section-marker) #main-content>article{margin-top:-38px!impo
   backdrop-filter:blur(20px) saturate(125%)!important;
   transition:opacity .15s ease-out!important;
   pointer-events:none;
+}
+
+/* The page-specific background override must never hide the fixed menu blur. */
+body:has(#tm-compact-section-marker) #menu-blur{
+  display:block!important;
+  visibility:visible!important;
+  z-index:0!important;
 }
