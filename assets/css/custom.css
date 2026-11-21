@@ -181,7 +181,8 @@ section {
    Published Badge ONLY
    ========================================= */
 
-.research-card-published .research-card-status {
+.research-card-published .research-card-status,
+.research-card-available-on-request .research-card-status {
     background: rgba(22, 163, 74, 0.90);
 
     color: white;
