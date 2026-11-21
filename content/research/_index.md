@@ -36,7 +36,7 @@ A poset is Macaulay if its partial order and an additional total order interact 
     status="AVAILABLE ON REQUEST"
     title="Hecke Algebras and the Kazhdan–Lusztig Theory"
     authors="**T. Mal**"
-    journal="2026 · Manuscript available on request"
+    journal="Bachelor's Thesis · 2026 · Available on Request"
     bibtex="@misc{mal_hecke, author={Mal, Treanungkur}, title={Hecke Algebras and the Kazhdan--Lusztig Theory}, year={2026}, note={Available on request}}"
 >}}
 
