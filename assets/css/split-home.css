@@ -247,7 +247,7 @@ body:has(#tm-compact-section-marker) #main-content>article{margin-top:-38px!impo
 /* Align the entire email image link slightly lower than the Email label. */
 .tm-hero .tm-content .tm-email-original{
  position:relative!important;
- top:4.75px!important;
+ top:4.9px!important;
 }
 .tm-hero .tm-content .tm-email-original img{
  transform:none!important;
