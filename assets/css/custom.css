@@ -706,3 +706,8 @@ section {
  .research-card-button-icon.arxiv-brand{width:21px!important;height:21px!important;flex-basis:21px!important}
  .research-card-button-icon.arxiv-brand svg{width:21px!important;height:21px!important}
 }
+
+/* Final adjustment: arXiv mark 24% smaller, retaining exact official shape. */
+.research-card-button-icon.arxiv-brand{width:19px!important;height:19px!important;flex:0 0 19px!important}
+.research-card-button-icon.arxiv-brand svg{width:19px!important;height:19px!important}
+@media(max-width:650px){.research-card-button-icon.arxiv-brand{width:17px!important;height:17px!important;flex-basis:17px!important}.research-card-button-icon.arxiv-brand svg{width:17px!important;height:17px!important}}
