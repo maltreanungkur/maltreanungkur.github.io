@@ -50,3 +50,8 @@
  .tm-hero h1{font-size:34px}
  .tm-hero .tm-subtitle{font-size:19px}
 }
+
+/* Final homepage spacing adjustment: no purple accent, minimal gap below fixed navbar. */
+.tm-hero .tm-accent{display:none!important}
+.tm-hero{padding-top:6px!important}
+@media(max-width:850px){.tm-hero{padding-top:8px!important}}
