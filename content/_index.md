@@ -43,7 +43,7 @@ description: Hi
     <a href="https://www.washington.edu/">University of Washington, Seattle</a>.
     Before coming to Seattle, I completed my B.Math (Hons.) at the
     <a href="https://www.isibang.ac.in/~statmath/">Indian Statistical Institute, Bangalore</a>,
-    where I was advised <a href="https://math.iisc.ac.in/~khare/">trmal@uw.edu</a>. by
+    where I was advised by
     <a href="https://math.iisc.ac.in/~khare/">Professor Apoorva Khare</a>.
   </p>
 
@@ -55,7 +55,7 @@ description: Hi
     <strong>Email:</strong>
     <span class="tm-email-row">
       <a href="mailto:trmal@uw.edu" class="tm-email-original" aria-label="Email trmal@uw.edu">
-        <img src="/images/email-text.svg" alt="trmal@uw.edu" class="nozoom">
+        <img src="/images/email-exact.png" alt="trmal@uw.edu" class="nozoom">
       </a>
       <button type="button" title="Copy email" aria-label="Copy email address" onclick="navigator.clipboard.writeText('trmal@uw.edu');return false;">⧉</button>
     </span>
