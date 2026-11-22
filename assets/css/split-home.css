@@ -327,3 +327,37 @@ body:has(#tm-compact-section-marker) #menu-blur{
 #tm-copy-toast.tm-visible{
  opacity:1;visibility:visible;transform:translate(-50%,0);
 }
+
+
+/* Research ONLY. Deliberately override the shared Research/Teaching photo rule.
+   This uses the rendered publication-filter marker, not JavaScript. */
+body:has(.tm-paper-filters) {
+  background-color:#081a2d!important;
+  background-image:none!important;
+}
+body:has(.tm-paper-filters)::before {
+  content:""!important;
+  position:fixed!important;
+  inset:0!important;
+  z-index:0!important;
+  background:radial-gradient(ellipse at 75% 20%,#142b46 0%,transparent 60%),
+             radial-gradient(ellipse at 18% 80%,#102640 0%,transparent 58%),
+             #081a2d!important;
+  background-image:radial-gradient(ellipse at 75% 20%,#142b46 0%,transparent 60%),
+                   radial-gradient(ellipse at 18% 80%,#102640 0%,transparent 58%)!important;
+  filter:blur(48px)!important;
+  opacity:1!important;
+  transform:none!important;
+  pointer-events:none!important;
+}
+body:has(.tm-paper-filters)::after{
+  content:""!important;position:fixed!important;inset:0!important;
+  z-index:0!important;background:rgba(7,20,37,.13)!important;
+  pointer-events:none!important;
+}
+body:has(.tm-paper-filters) #background-image,
+body:has(.tm-paper-filters) .tm-math-field,
+body:has(.tm-paper-filters) .single_hero_background:not(#menu-blur){
+  display:none!important;
+}
+body:has(.tm-paper-filters) #background-blur{background:transparent!important}
