@@ -96,7 +96,7 @@ body:has(#tm-compact-section-marker) .single_hero_background{
 
 /* Research and Teaching: same background image and overlay as the homepage.
    The legacy Blowfish hero and animated blur are hidden only on these pages. */
-body:has(#tm-compact-section-marker)::before{
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters))::before{
  content:"";position:fixed;inset:0;z-index:-9;pointer-events:none;
  background-color:#0b1e34;
  background-image:linear-gradient(rgba(8,23,43,.43),rgba(8,23,43,.43)),var(--tm-background-image,none);
@@ -116,12 +116,12 @@ body:has(#tm-compact-section-marker) #main-content > article{margin-top:-82px!im
 
 /* Final shared background rendering: exactly the homepage blur and tint. */
 body:has(#tm-compact-section-marker){background-color:#0b1e34!important}
-body:has(#tm-compact-section-marker)::before{
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters))::before{
  background-image:var(--tm-background-image,none)!important;
  filter:blur(4px)!important;opacity:.58!important;
  transform:scale(1.025);z-index:0!important;
 }
-body:has(#tm-compact-section-marker)::after{
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters))::after{
  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
  background:rgba(8,23,43,.43);
 }
@@ -361,3 +361,19 @@ body:has(.tm-paper-filters) .single_hero_background:not(#menu-blur){
   display:none!important;
 }
 body:has(.tm-paper-filters) #background-blur{background:transparent!important}
+
+/* Research background: NO background photograph or symbols, under any circumstances. */
+html body:has(.tm-paper-filters){background:#091b30!important;background-image:none!important}
+html body:has(.tm-paper-filters)::before{
+ content:""!important;position:fixed!important;inset:0!important;
+ background:#091b30!important;background-image:none!important;
+ filter:none!important;opacity:1!important;transform:none!important;
+ z-index:0!important;pointer-events:none!important
+}
+html body:has(.tm-paper-filters)::after{
+ content:""!important;position:fixed!important;inset:0!important;
+ background:linear-gradient(125deg,rgba(7,20,37,.12),rgba(22,47,73,.16),rgba(7,20,37,.12))!important;
+ filter:blur(48px)!important;opacity:1!important;z-index:0!important;pointer-events:none!important
+}
+html body:has(.tm-paper-filters) #background-image,
+html body:has(.tm-paper-filters) .tm-math-field{display:none!important}
