@@ -6,7 +6,7 @@ html body:has(.tm-paper-filters) .tm-math-field{
  position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;
  
  
- z-index:40!important;pointer-events:none!important;overflow:hidden!important;
+ z-index:1!important;pointer-events:none!important;overflow:hidden!important;
  background:transparent!important;opacity:1!important;
 }
 html body .tm-math-field .tm-math-cell{
@@ -21,7 +21,8 @@ html body .tm-math-field .tm-math-glyph{
  font-family:KaTeX_Main,Georgia,serif!important;
  font-size:clamp(15px,1.4vw,22px)!important;line-height:1.35!important;
  white-space:nowrap!important;color:#aacbe9!important;
- opacity:var(--glyph-opacity,.19)!important;
+ opacity:calc(var(--glyph-opacity,.19) * .7)!important;
+ filter:blur(.7px)!important;
  animation:tm-math-wander-v6 var(--motion-time,24s) ease-in-out var(--motion-delay,0s) infinite!important;
  will-change:transform;
 }
@@ -37,3 +38,15 @@ html body .tm-math-field .tm-math-glyph{
  html body .tm-math-field .tm-math-glyph{font-size:13px!important}
 }
 @media(prefers-reduced-motion:reduce){html body .tm-math-field .tm-math-glyph{animation:none!important}}
+
+/* Keep publication cards entirely opaque and above the animated backdrop. */
+html body:has(.tm-paper-filters) details.research-card{
+ position:relative!important;
+ z-index:3!important;
+ background:#15253a!important;
+ isolation:isolate!important;
+}
+html body:has(.tm-paper-filters) #main-content{
+ position:relative!important;
+ z-index:2!important;
+}
