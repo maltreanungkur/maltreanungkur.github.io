@@ -1,44 +1,26 @@
 (() => {
-  if (!/^\/research\/?$/.test(location.pathname)) return;
-  const init = () => {
-    if (document.querySelector('.tm-math-field')) return;
-    // Mathematical notation only; no named theorems or nilCoxeter expressions.
-    const symbols = [
-      'Gal(L/K)', 'Hⁿ(X,ℂ)', 'Pₓ,ᵧ(q)', '𝒟ᵇ(𝒞)', 'Spec A',
-      'Hᵖ,ᑫ(X)', 'W=⟨S⟩', 'Ext¹(A,B)', 'Lᵏ', 'K₀(𝒞)',
-      'ℓ(w)', '𝒪ₓ', 'Gal(ℚ̄/ℚ)', '𝓗(W)', 'X⊗Y',
-      'Hⁱ(X,Ωʲ)', 'sᵢsⱼsᵢ', 'IC(X)', 'Hom𝒞(X,Y)', 'hᵖ,ᑫ',
-      'Φ⁺', 'RΓ(X,𝓕)', 'G/B', 'Δ(λ)', '∇(λ)',
-      '∂∂̄', 'Pic(X)', 'CH⁎(X)', '𝔽ₚ', 'W/Wᴊ'
-    ];
-    const field = document.createElement('div');
-    field.className = 'tm-math-field';
-    field.setAttribute('aria-hidden','true');
-    // Each symbol occupies its own clipped cell, so paths cannot intersect.
-    // Motion direction and phase differ per cell, with no straight-line marching.
-    let seed=193;
-    const rand=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646};
-    symbols.forEach((symbol,i)=>{
-      const cell=document.createElement('div');
-      cell.className='tm-math-cell';
-      const glyph=document.createElement('span');
-      glyph.textContent=symbol;
-      const angle=rand()*Math.PI*2;
-      const radius=8+rand()*12;
-      glyph.style.setProperty('--dx1',(Math.cos(angle)*radius).toFixed(1)+'px');
-      glyph.style.setProperty('--dy1',(Math.sin(angle)*radius).toFixed(1)+'px');
-      glyph.style.setProperty('--dx2',(Math.cos(angle+1.7)*radius).toFixed(1)+'px');
-      glyph.style.setProperty('--dy2',(Math.sin(angle+1.7)*radius).toFixed(1)+'px');
-      glyph.style.setProperty('--dx3',(Math.cos(angle+3.5)*radius).toFixed(1)+'px');
-      glyph.style.setProperty('--dy3',(Math.sin(angle+3.5)*radius).toFixed(1)+'px');
-      glyph.style.animationDuration=(18+rand()*12).toFixed(1)+'s';
-      glyph.style.animationDelay=(-rand()*24).toFixed(1)+'s';
-      glyph.style.opacity=(.11+rand()*.07).toFixed(2);
-      glyph.style.fontSize=(15+rand()*6).toFixed(0)+'px';
-      cell.appendChild(glyph);
-      field.appendChild(cell);
-    });
-    document.body.prepend(field);
+ if(!/^\/research\/?$/.test(location.pathname))return;
+ const formulas=["\\operatorname{Gal}(L/K)","H^{p,q}(X)","P_{x,y}(q)","\\mathcal{D}^{b}(\\mathrm{Coh}\\,X)","\\operatorname{Spec}A","\\operatorname{Ext}^{1}(A,B)","W=\\langle S\\rangle","\\bigoplus_{p+q=n}H^{p,q}","\\mathcal{H}(W)","K_{0}(\\mathcal C)","\\ell(w)","\\mathcal{O}_{X}","\\operatorname{Gal}(\\overline{\\mathbb Q}/\\mathbb Q)","X\\otimes Y","H^{i}(X,\\Omega_X^{j})","s_is_js_i","\\mathrm{IC}_{X}","\\operatorname{Hom}_{\\mathcal C}(X,Y)","h^{p,q}=h^{q,p}","\\Phi^{+}","R\\Gamma(X,\\mathcal F)","G/B","\\Delta(\\lambda)","\\nabla(\\lambda)","\\partial\\bar\\partial","\\operatorname{Pic}(X)","\\mathrm{CH}^{*}(X)","\\mathbb F_{p}","W/W_J","\\mathbb{S}_{\\lambda}","\\mathcal{B}_{w}","\\operatorname{Ind}_{H}^{G}V","\\mathfrak{sl}_{2}","\\mathrm{RHom}(A,B)","L^{n-2k}","\\int_X\\alpha\\wedge\\beta","\\operatorname{Aut}_{K}(L)","\\mathbb{P}^{n}","\\mathcal{O}(1)","\\mathcal{P}erv(X)","R_{x,y}(q)","\\sum_{w\\in W}q^{\\ell(w)}"];
+ const init=()=>{
+  if(document.querySelector('.tm-math-field'))return;
+  const field=document.createElement('div');field.className='tm-math-field';field.setAttribute('aria-hidden','true');
+  let seed=281;const rand=()=>{seed=seed*16807%2147483647;return (seed-1)/2147483646};
+  formulas.forEach((formula,i)=>{
+   const cell=document.createElement('div');cell.className='tm-math-cell';
+   const glyph=document.createElement('span');glyph.className='tm-math-glyph';glyph.textContent=formula;
+   const angle=rand()*Math.PI*2,amp=7+rand()*12;
+   for(let n=1;n<=3;n++){const a=angle+n*1.42;glyph.style.setProperty('--mx'+n,Math.round(Math.cos(a)*amp)+'px');glyph.style.setProperty('--my'+n,Math.round(Math.sin(a)*amp)+'px')}
+   glyph.style.setProperty('--motion-time',(17+rand()*14).toFixed(1)+'s');
+   glyph.style.setProperty('--motion-delay',(-rand()*30).toFixed(1)+'s');
+   glyph.style.setProperty('--glyph-opacity',(.13+rand()*.08).toFixed(2));
+   cell.appendChild(glyph);field.appendChild(cell);
+  });
+  document.body.prepend(field);
+  const render=()=>{
+   if(!window.katex)return;
+   field.querySelectorAll('.tm-math-glyph').forEach((glyph,i)=>{try{window.katex.render(formulas[i],glyph,{throwOnError:false,strict:'ignore',output:'html'})}catch(e){glyph.textContent=formulas[i]}});
   };
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
+  if(window.katex)render();else{const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js';s.onload=render;document.head.appendChild(s)}
+ };
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
