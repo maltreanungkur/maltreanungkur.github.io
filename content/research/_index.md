@@ -19,6 +19,7 @@ I am broadly interested in representation theory and Lie algebras. I also enjoy 
 {{< katex >}}
 
 {{< research-card
+    number="1"
     status="PUBLISHED"
     category="Combinatorics"
     title="Constructions of Macaulay Posets and Macaulay Rings"
@@ -34,6 +35,7 @@ A poset is Macaulay if its partial order and an additional total order interact 
 {{< /research-card >}}
 
 {{< research-card
+    number="2"
     status="AVAILABLE ON REQUEST"
     category="Representation Theory · Coxeter Groups"
     title="Hecke Algebras and the Kazhdan–Lusztig Theory"
