@@ -1,31 +1,30 @@
-/* Research only: clean, softly blurred dark-blue atmosphere. No photo, formulas, or decoration. */
-body:has(#tm-compact-section-marker):has(.tm-paper-filters),
-body.tm-research-atmosphere{
-  background:#081a2e!important;
-  background-image:none!important;
+/* Research only: floating mathematical notation above the plain navy background. */
+html body:has(.tm-paper-filters) .tm-math-field,
+body:has(.tm-paper-filters) .tm-math-field,
+body.tm-research-atmosphere .tm-math-field{
+ display:block!important;position:fixed!important;inset:0!important;
+ width:100%!important;height:100vh!important;overflow:hidden!important;
+ pointer-events:none!important;z-index:1!important;
+ background:transparent!important;
 }
-body.tm-research-atmosphere::before,
-body.tm-research-atmosphere::after{
-  content:""!important;
-  position:fixed!important;
-  inset:0!important;
-  z-index:0!important;
-  pointer-events:none!important;
-  opacity:1!important;
-  transform:none!important;
-  background-image:none!important;
+.tm-math-field span{
+ position:absolute;display:block;max-width:22vw;white-space:nowrap;
+ color:#9dbbda;opacity:.12;font-family:Georgia,"Times New Roman",serif;
+ font-style:italic;line-height:1.3;
+ animation:tm-math-one-way 26s linear infinite;
+ will-change:transform,opacity;
 }
-body.tm-research-atmosphere::before{
-  background:radial-gradient(ellipse at 78% 18%,rgba(37,77,112,.28),transparent 58%),
-             radial-gradient(ellipse at 17% 82%,rgba(29,49,89,.22),transparent 60%),
-             linear-gradient(135deg,#071526,#0b2037 60%,#08182b)!important;
-  filter:blur(42px)!important;
+@keyframes tm-math-one-way{
+ 0%{transform:translate3d(-38px,0,0);opacity:0}
+ 12%{opacity:.12}
+ 85%{opacity:.12}
+ 100%{transform:translate3d(65px,0,0);opacity:0}
 }
-body.tm-research-atmosphere::after{background:rgba(7,19,36,.13)!important;filter:none!important}
-body.tm-research-atmosphere .tm-math-field,
-body.tm-research-atmosphere #background-image,
-body.tm-research-atmosphere .single_hero_background:not(#menu-blur){display:none!important}
-body.tm-research-atmosphere #background-blur{background:transparent!important}
-body.tm-research-atmosphere #main-content,
-body.tm-research-atmosphere header,
-body.tm-research-atmosphere footer{position:relative;z-index:2}
+html body:has(.tm-paper-filters) #main-content,
+html body:has(.tm-paper-filters) > div.relative,
+html body:has(.tm-paper-filters) header,
+html body:has(.tm-paper-filters) footer{position:relative;z-index:2}
+@media(max-width:700px){
+ .tm-math-field span{font-size:13px!important;opacity:.08;max-width:24vw;overflow:hidden}
+}
+@media(prefers-reduced-motion:reduce){.tm-math-field span{animation:none!important;opacity:.07!important}}
