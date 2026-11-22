@@ -37,7 +37,7 @@ A poset is Macaulay if its partial order and an additional total order interact 
 {{< research-card
     number="2"
     status="AVAILABLE ON REQUEST"
-    category="Representation Theory · Coxeter Groups"
+    category="Coxeter Groups · Hecke Algebras · Lie Algebras"
     title="Hecke Algebras and the Kazhdan–Lusztig Theory"
     authors="**T. Mal**"
     journal="Bachelor's Thesis · 2026 · Available on Request"
