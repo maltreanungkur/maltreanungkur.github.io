@@ -491,3 +491,13 @@ body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content 
 body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content section.grid article img {
   display:block!important;margin-bottom:0!important;
 }
+
+
+/* Mobile header: comfortable inset and a real gap between back arrow and name. */
+@media(max-width:640px){
+ .main-menu{padding-left:12px!important;box-sizing:border-box!important}
+ .main-menu > .tm-header-home-back{
+  position:static!important;left:auto!important;top:auto!important;
+  transform:none!important;margin-right:12px!important;
+ }
+}
