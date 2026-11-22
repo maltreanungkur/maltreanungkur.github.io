@@ -13,7 +13,7 @@
       <!-- Status -->
       {{ with .Get "status" }}
         <div class="research-card-status">
-          {{ . | humanize }}
+          {{ if eq (upper .) "PUBLISHED" }}Published{{ else if eq (upper .) "AVAILABLE ON REQUEST" }}Available on request{{ else }}{{ . | humanize }}{{ end }}
         </div>
       {{ end }}
 
