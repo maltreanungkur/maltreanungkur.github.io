@@ -5,14 +5,14 @@
   if(document.querySelector('.tm-math-field'))return;
   const field=document.createElement('div');field.className='tm-math-field';field.setAttribute('aria-hidden','true');
   let seed=281;const rand=()=>{seed=seed*16807%2147483647;return (seed-1)/2147483646};
-  formulas.forEach((formula,i)=>{
+  formulas.slice(0,30).forEach((formula,i)=>{
    const cell=document.createElement('div');cell.className='tm-math-cell';
    const glyph=document.createElement('span');glyph.className='tm-math-glyph';glyph.textContent=formula;
    const angle=rand()*Math.PI*2,amp=7+rand()*12;
    for(let n=1;n<=3;n++){const a=angle+n*1.42;glyph.style.setProperty('--mx'+n,Math.round(Math.cos(a)*amp)+'px');glyph.style.setProperty('--my'+n,Math.round(Math.sin(a)*amp)+'px')}
    glyph.style.setProperty('--motion-time',(17+rand()*14).toFixed(1)+'s');
    glyph.style.setProperty('--motion-delay',(-rand()*30).toFixed(1)+'s');
-   glyph.style.setProperty('--glyph-opacity',(.13+rand()*.08).toFixed(2));
+   glyph.style.setProperty('--glyph-opacity',(.17+rand()*.08).toFixed(2));
    cell.appendChild(glyph);field.appendChild(cell);
   });
   document.body.prepend(field);
