@@ -1,36 +1,39 @@
-/* Research: independent, gently wandering math notation in collision-free cells. */
+/* Visible research math atmosphere: above the page background, below interactions.
+   Each glyph is confined to its own cell; no two glyph paths can collide. */
+html body .tm-math-field,
 html body:has(.tm-paper-filters) .tm-math-field{
- display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));
- grid-template-rows:repeat(6,minmax(0,1fr));
- position:fixed!important;inset:0!important;width:100%!important;
- height:100vh!important;z-index:1!important;pointer-events:none!important;
- overflow:hidden!important;background:transparent!important;
+ display:grid!important;visibility:visible!important;
+ position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;
+ grid-template-columns:repeat(5,minmax(0,1fr))!important;
+ grid-template-rows:repeat(6,minmax(0,1fr))!important;
+ z-index:40!important;pointer-events:none!important;overflow:hidden!important;
+ background:transparent!important;opacity:1!important;
 }
-.tm-math-cell{
- display:flex;align-items:center;justify-content:center;min-width:0;min-height:0;
- overflow:hidden;contain:layout paint;
+html body .tm-math-field .tm-math-cell{
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ min-width:0!important;min-height:0!important;overflow:hidden!important;
+ contain:layout paint;
 }
-.tm-math-cell span{
+html body .tm-math-field .tm-math-glyph{
  position:relative!important;top:auto!important;left:auto!important;
- display:block!important;max-width:calc(100% - 28px);
- color:#a5c4e0;font-family:Georgia,"Times New Roman",serif;font-style:italic;
- white-space:nowrap;overflow:hidden;text-overflow:clip;
- animation:tm-math-wander var(--unused,24s) ease-in-out infinite!important;
+ display:block!important;visibility:visible!important;
+ max-width:calc(100% - 12px)!important;overflow:hidden!important;
+ font-family:KaTeX_Main,Georgia,serif!important;
+ font-size:clamp(15px,1.4vw,22px)!important;line-height:1.35!important;
+ white-space:nowrap!important;color:#aacbe9!important;
+ opacity:var(--glyph-opacity,.19)!important;
+ animation:tm-math-wander-v6 var(--motion-time,24s) ease-in-out var(--motion-delay,0s) infinite!important;
  will-change:transform;
 }
-@keyframes tm-math-wander{
+.tm-math-glyph .katex{font-size:1em!important;color:inherit!important}
+@keyframes tm-math-wander-v6{
  0%,100%{transform:translate3d(0,0,0)}
- 25%{transform:translate3d(var(--dx1),var(--dy1),0)}
- 50%{transform:translate3d(var(--dx2),var(--dy2),0)}
- 75%{transform:translate3d(var(--dx3),var(--dy3),0)}
+ 25%{transform:translate3d(var(--mx1,12px),var(--my1,-9px),0)}
+ 50%{transform:translate3d(var(--mx2,-8px),var(--my2,14px),0)}
+ 75%{transform:translate3d(var(--mx3,10px),var(--my3,7px),0)}
 }
-html body:has(.tm-paper-filters) #main-content,
-html body:has(.tm-paper-filters)>div.relative{position:relative;z-index:2}
 @media(max-width:700px){
- html body:has(.tm-paper-filters) .tm-math-field{
- grid-template-columns:repeat(3,minmax(0,1fr));
- grid-template-rows:repeat(10,minmax(0,1fr));
- }
- .tm-math-cell span{font-size:13px!important;opacity:.10!important;max-width:calc(100% - 18px)}
+ html body .tm-math-field{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:repeat(10,minmax(0,1fr))!important}
+ html body .tm-math-field .tm-math-glyph{font-size:13px!important}
 }
-@media(prefers-reduced-motion:reduce){.tm-math-cell span{animation:none!important}}
+@media(prefers-reduced-motion:reduce){html body .tm-math-field .tm-math-glyph{animation:none!important}}
