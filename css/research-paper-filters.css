@@ -91,17 +91,3 @@ article .tm-paper-toolbar,
  article .tm-paper-toolbar,
  .prose .tm-paper-toolbar{margin-top:26px!important;margin-bottom:26px!important}
 }
-
-/* Exact equal spacing: divider -> toolbar and toolbar -> first paper. */
-#main-content .tm-paper-toolbar,.prose .tm-paper-toolbar{
- margin-top:30px!important;margin-bottom:0!important;
-}
-#main-content .tm-paper-toolbar ~ details.research-card:first-of-type,
-.prose .tm-paper-toolbar ~ details.research-card:first-of-type{
- margin-top:30px!important;
-}
-@media(max-width:640px){
- #main-content .tm-paper-toolbar,.prose .tm-paper-toolbar{margin-top:22px!important;margin-bottom:0!important}
- #main-content .tm-paper-toolbar ~ details.research-card:first-of-type,
- .prose .tm-paper-toolbar ~ details.research-card:first-of-type{margin-top:22px!important}
-}
