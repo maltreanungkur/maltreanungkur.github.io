@@ -452,3 +452,14 @@ html body:has(.tm-paper-filters)::after{
 @media(max-width:640px){
  .main-menu > .tm-header-home-back{left:-34px!important}
 }
+
+
+/* Teaching page only: balanced spacing from introduction to year and image. */
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content article + section,
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content article + div {
+  margin-top:40px!important;
+}
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content h2 {
+  margin-top:40px!important;
+  margin-bottom:20px!important;
+}
