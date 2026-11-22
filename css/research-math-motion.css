@@ -1,7 +1,10 @@
-/* Quiet, research-only mathematical atmosphere. */
-.tm-math-field{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;isolation:isolate}
-.tm-math-field span{position:absolute;display:block;white-space:nowrap;font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#9dbbdc;opacity:var(--alpha);font-size:var(--size);left:var(--x);top:var(--y);transform:translate3d(0,0,0);animation:tm-math-drift var(--duration) ease-in-out var(--delay) infinite alternate;will-change:transform}
-body:has(.tm-math-field) main,body:has(.tm-math-field) header,body:has(.tm-math-field) footer{position:relative;z-index:1}
-@keyframes tm-math-drift{from{transform:translate3d(-9px,9px,0) rotate(-2deg)}to{transform:translate3d(18px,-23px,0) rotate(2deg)}}
+/* Research-only: soft navy/teal atmosphere, replacing the blurred math photo. */
+body.tm-research-atmosphere{background-color:#061426!important;background-image:radial-gradient(ellipse at 80% 12%,rgba(25,83,101,.26),transparent 47%),radial-gradient(ellipse at 14% 56%,rgba(33,38,78,.22),transparent 52%),linear-gradient(145deg,#071626,#091a2c 55%,#071321)!important;background-attachment:fixed}
+body.tm-research-atmosphere #background-image{display:none!important}
+body.tm-research-atmosphere #background-blur{background:transparent!important;backdrop-filter:none!important}
+body.tm-research-atmosphere .tm-math-field{position:absolute;inset:0 auto auto 0;width:100%;z-index:0;pointer-events:none;overflow:hidden}
+.tm-math-field span{position:absolute;display:block;white-space:nowrap;font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#a8c5de;opacity:var(--alpha);font-size:var(--size);left:var(--x);top:var(--y);animation:tm-math-drift var(--duration) ease-in-out var(--delay) infinite alternate;will-change:transform}
+body.tm-research-atmosphere main,body.tm-research-atmosphere header,body.tm-research-atmosphere footer{position:relative;z-index:1}
+@keyframes tm-math-drift{from{transform:translate3d(-12px,13px,0) rotate(-2deg)}to{transform:translate3d(24px,-29px,0) rotate(2deg)}}
 @media(prefers-reduced-motion:reduce){.tm-math-field span{animation:none}}
 @media(max-width:640px){.tm-math-field span{opacity:calc(var(--alpha) * .65)}}
