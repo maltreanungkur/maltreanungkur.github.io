@@ -111,3 +111,38 @@ article .tm-paper-toolbar,
 body:has(.tm-paper-filters) .tm-paper-toolbar{margin-bottom:34px!important}
 body:has(.tm-paper-filters) .research-card:first-of-type{margin-top:0!important}
 @media(max-width:640px){body:has(.tm-paper-filters) .tm-paper-toolbar{margin-bottom:26px!important}}
+
+
+/* Responsive research toolbar: never force heading and filters to overlap. */
+@media(max-width:700px){
+ #main-content .tm-paper-toolbar,article .tm-paper-toolbar,.prose .tm-paper-toolbar{
+  flex-wrap:wrap!important;gap:12px!important;align-items:flex-start!important;
+ }
+ #main-content .tm-paper-toolbar h2,.prose .tm-paper-toolbar h2{
+  flex:1 1 100%!important;white-space:normal!important;
+  font-size:1.25rem!important;line-height:1.3!important;
+ }
+ #main-content .tm-paper-toolbar nav.tm-paper-filters,.prose .tm-paper-toolbar nav.tm-paper-filters{
+  flex:1 1 100%!important;justify-content:flex-start!important;
+  flex-wrap:wrap!important;gap:7px!important;
+ }
+ .tm-paper-toolbar .tm-paper-filter{font-size:.72rem!important;padding:5px 10px!important}
+}
+/* Each status/category pill is an indivisible flex item; wrap only when necessary. */
+.research-card-summary .tm-research-badges{
+ display:flex!important;flex-wrap:wrap!important;align-items:center!important;
+ gap:8px!important;margin-bottom:16px!important;min-width:0;
+}
+.research-card-summary .tm-research-badges .research-card-status,
+.research-card-summary .tm-research-badges .tm-research-category{
+ margin:0!important;flex:0 0 auto!important;max-width:100%;
+ white-space:nowrap!important;
+}
+@media(max-width:640px){
+ .research-card-summary .tm-research-badges{gap:7px!important}
+ .research-card-summary .tm-research-badges .research-card-status,
+ .research-card-summary .tm-research-badges .tm-research-category{
+  height:auto!important;min-height:32px!important;padding:6px 10px!important;
+  font-size:.69rem!important;
+ }
+}
