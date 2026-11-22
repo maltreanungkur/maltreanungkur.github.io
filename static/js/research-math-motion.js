@@ -21,7 +21,7 @@
     'Pₓ,ᵧ(q)', 'Rₓ,ᵧ(q)', '𝓗(W)', '∑ q^ℓ⁽ʷ⁾',
     '[e,w]', 'Bₙ', 'Dₙ', 'I₂(m)', 'G/B',
     'Schubert varieties', 'Bruhat order', 'KL polynomials',
-    'W/Wᴊ', 'Des(w)', 'Inv(w)', '𝔰𝔩₂'
+    'W/Wᴊ', 'Des(w)', 'Inv(w)', '𝔰𝔩₂', 'Gal(ℚ̄/ℚ)', 'H⁎(X,ℚ)', '𝒟-mod', 'Tₛ', '𝒪(1)', '∇(λ)', '𝒫erv(X)', 'Hodge filtration', '∑₍w∈W₎ q^ℓ⁽ʷ⁾', '𝔥⁎', '𝔽ₚ', 'Hodge–Riemann', 'Bott–Samelson', 'Coxeter complex'
   ];
   const layer = document.createElement('div');
   layer.className = 'tm-math-field';
@@ -29,16 +29,15 @@
   let seed = 137;
   const rand = () => { seed = seed * 16807 % 2147483647; return (seed - 1) / 2147483646; };
   // A taller, document-scrolling field avoids crowding a single viewport.
-  const height = Math.max(document.documentElement.scrollHeight, innerHeight * 1.7);
-  layer.style.height = height + 'px';
+  layer.style.height = '100vh';
   expressions.forEach((value, i) => {
     const el = document.createElement('span');
     el.textContent = value;
     el.style.setProperty('--x', (2 + rand() * 85).toFixed(2) + '%');
-    el.style.setProperty('--y', (rand() * 97).toFixed(2) + '%');
+    el.style.setProperty('--y', (rand() * 93).toFixed(2) + '%');
     el.style.setProperty('--size', (15 + rand() * 15).toFixed(1) + 'px');
-    el.style.setProperty('--alpha', (0.055 + rand() * 0.065).toFixed(3));
-    el.style.setProperty('--duration', (25 + rand() * 35).toFixed(1) + 's');
+    el.style.setProperty('--alpha', (0.09 + rand() * 0.09).toFixed(3));
+    el.style.setProperty('--duration', (12 + rand() * 15).toFixed(1) + 's');
     el.style.setProperty('--delay', (-rand() * 45).toFixed(1) + 's');
     layer.appendChild(el);
   });
