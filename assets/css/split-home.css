@@ -501,3 +501,26 @@ body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content 
   transform:none!important;margin-right:12px!important;
  }
 }
+
+/* Consistent back navigation on all non-home pages. */
+.main-menu:has(> .tm-header-home-back){position:relative!important}
+.main-menu > .tm-header-home-back{
+ position:static!important;left:auto!important;top:auto!important;
+ transform:none!important;margin:0 12px 0 0!important;
+ flex-shrink:0!important;
+}
+@media(max-width:640px){
+ .main-menu{padding-left:4px!important}
+ .main-menu > .tm-header-home-back{margin-right:12px!important}
+}
+/* UDGRP: pin the timeline just beneath the fixed header while article scrolls. */
+@media(min-width:1024px){
+ body:has(.tm-udgrp-toc) .tm-udgrp-toc{
+  position:sticky!important;top:76px!important;
+  max-height:calc(100dvh - 90px)!important;
+  overflow-y:auto!important;overscroll-behavior:contain;
+ }
+ body:has(.tm-udgrp-toc) .tm-udgrp-toc-wrap{
+  align-self:stretch!important;min-height:0!important;
+ }
+}
