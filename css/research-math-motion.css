@@ -1,0 +1,7 @@
+/* Quiet, research-only mathematical atmosphere. */
+.tm-math-field{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;isolation:isolate}
+.tm-math-field span{position:absolute;display:block;white-space:nowrap;font-family:Georgia,"Times New Roman",serif;font-style:italic;color:#9dbbdc;opacity:var(--alpha);font-size:var(--size);left:var(--x);top:var(--y);transform:translate3d(0,0,0);animation:tm-math-drift var(--duration) ease-in-out var(--delay) infinite alternate;will-change:transform}
+body:has(.tm-math-field) main,body:has(.tm-math-field) header,body:has(.tm-math-field) footer{position:relative;z-index:1}
+@keyframes tm-math-drift{from{transform:translate3d(-9px,9px,0) rotate(-2deg)}to{transform:translate3d(18px,-23px,0) rotate(2deg)}}
+@media(prefers-reduced-motion:reduce){.tm-math-field span{animation:none}}
+@media(max-width:640px){.tm-math-field span{opacity:calc(var(--alpha) * .65)}}
