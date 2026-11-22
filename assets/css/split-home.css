@@ -479,3 +479,15 @@ body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content 
   margin-top:-24px!important;
   margin-bottom:32px!important;
 }
+
+/* Teaching course cards: title and metadata must sit below the image, never overlay it. */
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content section.grid article {
+  display:flex!important;flex-direction:column!important;overflow:hidden;
+}
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content section.grid article h2,
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content section.grid article h3 {
+  position:static!important;transform:none!important;margin:12px 0 8px!important;
+}
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content section.grid article img {
+  display:block!important;margin-bottom:0!important;
+}
