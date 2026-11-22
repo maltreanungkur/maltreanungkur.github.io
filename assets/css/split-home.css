@@ -553,3 +553,14 @@ body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content 
   overflow-y:auto!important;overscroll-behavior:contain;
  }
 }
+
+/* Header correction: 30px arrow + 4px spare + 8px flex gap = 12px
+   between arrow and name, identically on Home and every inner page. */
+.tm-site-header-row .tm-header-back-slot{
+ flex:0 0 34px!important;width:34px!important;min-width:34px!important;
+}
+@media(max-width:640px){
+ .tm-site-header-row .tm-header-back-slot{
+  flex:0 0 34px!important;width:34px!important;min-width:34px!important;
+ }
+}
