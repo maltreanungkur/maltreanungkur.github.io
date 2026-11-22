@@ -473,3 +473,9 @@ body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content 
  margin-top:12px!important;
  margin-bottom:32px!important;
 }
+
+/* Teaching only: halve the remaining gap before the year heading. */
+body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content h2:first-of-type {
+  margin-top:-24px!important;
+  margin-bottom:32px!important;
+}
