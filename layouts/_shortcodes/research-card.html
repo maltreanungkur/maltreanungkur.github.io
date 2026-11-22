@@ -87,7 +87,7 @@
         <button
           type="button"
           class="research-card-button"
-          data-tm-abstract-toggle="true"
+          onclick="event.preventDefault(); event.stopPropagation(); const card = this.closest('details.research-card'); card.open = !card.open;"
         >
           <span class="research-card-button-icon abstract">
             <svg viewBox="0 0 24 24" aria-hidden="true">
