@@ -76,3 +76,18 @@ article .tm-paper-toolbar,
  #main-content .tm-paper-toolbar nav.tm-paper-filters{gap:3px!important}
  .tm-paper-toolbar .tm-paper-filter{font-size:.6rem!important;padding:4px 6px!important}
 }
+
+/* Equal vertical breathing room around the publications heading and filter row. */
+#main-content .tm-paper-toolbar,
+article .tm-paper-toolbar,
+.prose .tm-paper-toolbar{
+ margin-top:38px!important;
+ margin-bottom:38px!important;
+}
+#main-content .tm-paper-toolbar + .research-card,
+.prose .tm-paper-toolbar + .research-card{margin-top:0!important}
+@media(max-width:640px){
+ #main-content .tm-paper-toolbar,
+ article .tm-paper-toolbar,
+ .prose .tm-paper-toolbar{margin-top:26px!important;margin-bottom:26px!important}
+}
