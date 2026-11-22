@@ -1,35 +1,44 @@
 (() => {
   if (!/^\/research\/?$/.test(location.pathname)) return;
-  const start = () => {
+  const init = () => {
     if (document.querySelector('.tm-math-field')) return;
-    // Mathematical notation only; no named theorems, no nilCoxeter expressions.
-    const expressions = [
-      'Gal(L/K)', 'Hⁿ(X, ℂ)', 'Pₓ,ᵧ(q)', '𝒟ᵇ(Coh X)',
-      'Spec(A)', 'Hᵖ,ᑫ(X)', 'W = ⟨S⟩', 'Ext¹(A,B)',
-      'Lᵏ : Hⁿ⁻ᵏ → Hⁿ⁺ᵏ', 'K₀(𝒞)', 'ℓ(w)', '𝒪ₓ',
-      'Gal(ℚ̄/ℚ)', '𝓗(W)', 'X ⊗ Y', 'Hⁱ(X, Ωʲₓ)',
-      'sᵢsⱼsᵢ', 'IC(X)', 'Hom𝒞(X,Y)', 'hᵖ,ᑫ = hᑫ,ᵖ',
-      'Φ⁺', 'RΓ(X,𝓕)', 'G/B', 'Δ(λ)'
+    // Mathematical notation only; no named theorems or nilCoxeter expressions.
+    const symbols = [
+      'Gal(L/K)', 'Hⁿ(X,ℂ)', 'Pₓ,ᵧ(q)', '𝒟ᵇ(𝒞)', 'Spec A',
+      'Hᵖ,ᑫ(X)', 'W=⟨S⟩', 'Ext¹(A,B)', 'Lᵏ', 'K₀(𝒞)',
+      'ℓ(w)', '𝒪ₓ', 'Gal(ℚ̄/ℚ)', '𝓗(W)', 'X⊗Y',
+      'Hⁱ(X,Ωʲ)', 'sᵢsⱼsᵢ', 'IC(X)', 'Hom𝒞(X,Y)', 'hᵖ,ᑫ',
+      'Φ⁺', 'RΓ(X,𝓕)', 'G/B', 'Δ(λ)', '∇(λ)',
+      '∂∂̄', 'Pic(X)', 'CH⁎(X)', '𝔽ₚ', 'W/Wᴊ'
     ];
-    const layer = document.createElement('div');
-    layer.className = 'tm-math-field';
-    layer.setAttribute('aria-hidden', 'true');
-    // A regular 4-column, 6-row grid keeps expressions in separate lanes.
-    // Every item travels rightwards at the same speed and never reverses.
-    const columns = 4, rows = 6;
-    expressions.forEach((expression, i) => {
-      const col = i % columns;
-      const row = Math.floor(i / columns);
-      const el = document.createElement('span');
-      el.textContent = expression;
-      el.style.left = (col * 25 + 2) + '%';
-      el.style.top = (row * (100 / rows) + 5) + '%';
-      el.style.fontSize = (17 + (i % 3) * 2) + 'px';
-      el.style.animationDelay = (-((i * 7) % 23)) + 's';
-      layer.appendChild(el);
+    const field = document.createElement('div');
+    field.className = 'tm-math-field';
+    field.setAttribute('aria-hidden','true');
+    // Each symbol occupies its own clipped cell, so paths cannot intersect.
+    // Motion direction and phase differ per cell, with no straight-line marching.
+    let seed=193;
+    const rand=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646};
+    symbols.forEach((symbol,i)=>{
+      const cell=document.createElement('div');
+      cell.className='tm-math-cell';
+      const glyph=document.createElement('span');
+      glyph.textContent=symbol;
+      const angle=rand()*Math.PI*2;
+      const radius=8+rand()*12;
+      glyph.style.setProperty('--dx1',(Math.cos(angle)*radius).toFixed(1)+'px');
+      glyph.style.setProperty('--dy1',(Math.sin(angle)*radius).toFixed(1)+'px');
+      glyph.style.setProperty('--dx2',(Math.cos(angle+1.7)*radius).toFixed(1)+'px');
+      glyph.style.setProperty('--dy2',(Math.sin(angle+1.7)*radius).toFixed(1)+'px');
+      glyph.style.setProperty('--dx3',(Math.cos(angle+3.5)*radius).toFixed(1)+'px');
+      glyph.style.setProperty('--dy3',(Math.sin(angle+3.5)*radius).toFixed(1)+'px');
+      glyph.style.animationDuration=(18+rand()*12).toFixed(1)+'s';
+      glyph.style.animationDelay=(-rand()*24).toFixed(1)+'s';
+      glyph.style.opacity=(.11+rand()*.07).toFixed(2);
+      glyph.style.fontSize=(15+rand()*6).toFixed(0)+'px';
+      cell.appendChild(glyph);
+      field.appendChild(cell);
     });
-    document.body.prepend(layer);
+    document.body.prepend(field);
   };
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, {once:true});
-  else start();
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
