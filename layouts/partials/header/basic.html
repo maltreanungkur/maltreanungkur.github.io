@@ -21,6 +21,13 @@
       </div>
     {{ end }}
   {{ end }}
+  {{ if or (eq .RelPermalink "/research/") (eq .RelPermalink "/teaching/") }}
+    <a href="{{ "" | relLangURL }}" class="tm-header-home-back" aria-label="Back to Home" title="Back to Home">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M19 12H5m7 7-7-7 7-7"/>
+      </svg>
+    </a>
+  {{ end }}
   {{ if not .Site.Params.disableTextInHeader | default true }}
     <a href="{{ "" | relLangURL }}" class="text-base font-medium truncate min-w-0 shrink">
       Treanungkur
