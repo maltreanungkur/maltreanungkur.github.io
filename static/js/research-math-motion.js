@@ -16,6 +16,33 @@
    cell.appendChild(glyph);field.appendChild(cell);
   });
   document.body.prepend(field);
+  // Scatter freely over the viewport, rejecting positions whose movement
+  // envelopes would intersect. No rows, columns, or lattice alignment.
+  const scatter=()=>{
+    const width=field.clientWidth,height=field.clientHeight;
+    const mobile=width<700;
+    const boxW=mobile?Math.min(116,width*.29):Math.min(185,width*.155);
+    const boxH=mobile?Math.min(53,height*.068):Math.min(70,height*.095);
+    const gap=mobile?5:9;
+    const placed=[];
+    Array.from(field.children).forEach(cell=>{
+      let chosen=null;
+      for(let tries=0;tries<450;tries++){
+        const x=8+rand()*Math.max(1,width-boxW-16);
+        const y=8+rand()*Math.max(1,height-boxH-16);
+        if(placed.every(p=>x+boxW+gap<p.x||p.x+boxW+gap<x||y+boxH+gap<p.y||p.y+boxH+gap<y)){
+          chosen={x,y};break;
+        }
+      }
+      if(!chosen){cell.style.display='none';return}
+      placed.push(chosen);
+      cell.style.display='flex';
+      cell.style.left=chosen.x+'px';cell.style.top=chosen.y+'px';
+      cell.style.width=boxW+'px';cell.style.height=boxH+'px';
+    });
+  };
+  scatter();
+  window.addEventListener('resize',scatter,{passive:true});
   const render=()=>{
    if(!window.katex)return;
    field.querySelectorAll('.tm-math-glyph').forEach((glyph,i)=>{try{window.katex.render(formulas[i],glyph,{throwOnError:false,strict:'ignore',output:'html'})}catch(e){glyph.textContent=formulas[i]}});
