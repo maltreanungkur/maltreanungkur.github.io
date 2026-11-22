@@ -17,6 +17,10 @@
         </div>
       {{ end }}
 
+      {{ with .Get "category" }}
+        <span class="tm-research-category">{{ . }}</span>
+      {{ end }}
+
       <!-- Title -->
       <h3 class="research-card-title">
         {{ .Get "title" }}
