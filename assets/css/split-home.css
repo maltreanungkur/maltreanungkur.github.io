@@ -437,3 +437,18 @@ html body:has(.tm-paper-filters)::after{
  color:#e3f0ff;background:rgba(42,99,174,.2);
  border-color:#80b8ff;text-decoration:none;
 }
+
+/* Keep the site name exactly at its original Home-page position.
+   The back arrow floats in the left margin, outside normal flex layout. */
+.main-menu:has(> .tm-header-home-back){position:relative!important}
+.main-menu > .tm-header-home-back{
+ position:absolute!important;
+ left:-39px!important;
+ top:50%!important;
+ transform:translateY(-50%)!important;
+ margin:0!important;
+ z-index:5!important;
+}
+@media(max-width:640px){
+ .main-menu > .tm-header-home-back{left:-34px!important}
+}
