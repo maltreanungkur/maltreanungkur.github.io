@@ -105,3 +105,9 @@ article .tm-paper-toolbar,
  #main-content .tm-paper-toolbar ~ details.research-card:first-of-type,
  .prose .tm-paper-toolbar ~ details.research-card:first-of-type{margin-top:22px!important}
 }
+
+/* Explicit visible gap between heading/filter row and first publication card.
+   The intervening KaTeX shortcode may add nodes, so do not rely on adjacency. */
+body:has(.tm-paper-filters) .tm-paper-toolbar{margin-bottom:34px!important}
+body:has(.tm-paper-filters) .research-card:first-of-type{margin-top:0!important}
+@media(max-width:640px){body:has(.tm-paper-filters) .tm-paper-toolbar{margin-bottom:26px!important}}
