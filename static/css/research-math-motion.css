@@ -2,15 +2,15 @@
    Each glyph is confined to its own cell; no two glyph paths can collide. */
 html body .tm-math-field,
 html body:has(.tm-paper-filters) .tm-math-field{
- display:grid!important;visibility:visible!important;
+ display:block!important;visibility:visible!important;
  position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;
- grid-template-columns:repeat(5,minmax(0,1fr))!important;
- grid-template-rows:repeat(6,minmax(0,1fr))!important;
+ 
+ 
  z-index:40!important;pointer-events:none!important;overflow:hidden!important;
  background:transparent!important;opacity:1!important;
 }
 html body .tm-math-field .tm-math-cell{
- display:flex!important;align-items:center!important;justify-content:center!important;
+ position:absolute!important;display:flex!important;align-items:center!important;justify-content:center!important;
  min-width:0!important;min-height:0!important;overflow:hidden!important;
  contain:layout paint;
 }
@@ -33,7 +33,7 @@ html body .tm-math-field .tm-math-glyph{
  75%{transform:translate3d(var(--mx3,10px),var(--my3,7px),0)}
 }
 @media(max-width:700px){
- html body .tm-math-field{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:repeat(10,minmax(0,1fr))!important}
+ 
  html body .tm-math-field .tm-math-glyph{font-size:13px!important}
 }
 @media(prefers-reduced-motion:reduce){html body .tm-math-field .tm-math-glyph{animation:none!important}}
