@@ -392,3 +392,15 @@ html body:has(.tm-paper-filters)::after{
  background:rgba(8,23,43,.43)!important;
  filter:none!important;opacity:1!important;
 }
+
+/* Research final background calibration: sample the original dark-blue appearance,
+   but do not render the photograph or any mathematical shapes. */
+html body:has(.tm-paper-filters){background:#071626!important;background-image:none!important}
+html body:has(.tm-paper-filters)::before{
+ background:#071626!important;background-image:none!important;
+ opacity:1!important;filter:none!important;transform:none!important
+}
+html body:has(.tm-paper-filters)::after{
+ background:linear-gradient(115deg,rgba(8,23,40,.10),rgba(6,21,38,.04),rgba(8,23,40,.10))!important;
+ filter:blur(40px)!important;opacity:1!important
+}
