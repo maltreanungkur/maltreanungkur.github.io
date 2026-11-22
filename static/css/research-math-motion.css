@@ -1,7 +1,39 @@
-html body:has(.tm-paper-filters) .tm-math-field{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;grid-template-rows:repeat(7,minmax(0,1fr))!important;position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;z-index:1!important;pointer-events:none!important;overflow:hidden!important;background:transparent!important}
-.tm-math-field .tm-math-cell{display:flex!important;align-items:center!important;justify-content:center!important;min-width:0!important;min-height:0!important;overflow:hidden!important;contain:layout paint}
-.tm-math-field .tm-math-cell .tm-math-glyph{position:relative!important;left:auto!important;top:auto!important;display:block!important;max-width:calc(100% - 22px)!important;font-size:clamp(12px,1.08vw,17px)!important;line-height:1.4!important;white-space:nowrap!important;color:#a5c5e5!important;opacity:var(--glyph-opacity,.16)!important;animation:tm-math-orbit var(--motion-time,24s) ease-in-out var(--motion-delay,0s) infinite!important;will-change:transform}
+/* Visible research math atmosphere: above the page background, below interactions.
+   Each glyph is confined to its own cell; no two glyph paths can collide. */
+html body .tm-math-field,
+html body:has(.tm-paper-filters) .tm-math-field{
+ display:grid!important;visibility:visible!important;
+ position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;
+ grid-template-columns:repeat(5,minmax(0,1fr))!important;
+ grid-template-rows:repeat(6,minmax(0,1fr))!important;
+ z-index:40!important;pointer-events:none!important;overflow:hidden!important;
+ background:transparent!important;opacity:1!important;
+}
+html body .tm-math-field .tm-math-cell{
+ display:flex!important;align-items:center!important;justify-content:center!important;
+ min-width:0!important;min-height:0!important;overflow:hidden!important;
+ contain:layout paint;
+}
+html body .tm-math-field .tm-math-glyph{
+ position:relative!important;top:auto!important;left:auto!important;
+ display:block!important;visibility:visible!important;
+ max-width:calc(100% - 12px)!important;overflow:hidden!important;
+ font-family:KaTeX_Main,Georgia,serif!important;
+ font-size:clamp(15px,1.4vw,22px)!important;line-height:1.35!important;
+ white-space:nowrap!important;color:#aacbe9!important;
+ opacity:var(--glyph-opacity,.19)!important;
+ animation:tm-math-wander-v6 var(--motion-time,24s) ease-in-out var(--motion-delay,0s) infinite!important;
+ will-change:transform;
+}
 .tm-math-glyph .katex{font-size:1em!important;color:inherit!important}
-@keyframes tm-math-orbit{0%,100%{transform:translate3d(0,0,0)}25%{transform:translate3d(var(--mx1),var(--my1),0)}50%{transform:translate3d(var(--mx2),var(--my2),0)}75%{transform:translate3d(var(--mx3),var(--my3),0)}}
-@media(max-width:700px){html body:has(.tm-paper-filters) .tm-math-field{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:repeat(14,minmax(0,1fr))!important}.tm-math-field .tm-math-glyph{font-size:12px!important}}
-@media(prefers-reduced-motion:reduce){.tm-math-field .tm-math-glyph{animation:none!important}}
+@keyframes tm-math-wander-v6{
+ 0%,100%{transform:translate3d(0,0,0)}
+ 25%{transform:translate3d(var(--mx1,12px),var(--my1,-9px),0)}
+ 50%{transform:translate3d(var(--mx2,-8px),var(--my2,14px),0)}
+ 75%{transform:translate3d(var(--mx3,10px),var(--my3,7px),0)}
+}
+@media(max-width:700px){
+ html body .tm-math-field{grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:repeat(10,minmax(0,1fr))!important}
+ html body .tm-math-field .tm-math-glyph{font-size:13px!important}
+}
+@media(prefers-reduced-motion:reduce){html body .tm-math-field .tm-math-glyph{animation:none!important}}
