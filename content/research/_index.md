@@ -14,14 +14,7 @@ I am broadly interested in representation theory and Lie algebras. I also enjoy 
 
 ------
 
-<div class="tm-paper-toolbar">
-<h2 id="preprints-and-published-papers">Preprints and Published Papers</h2>
-<nav class="tm-paper-filters" aria-label="Filter research papers">
-<button type="button" class="tm-paper-filter" data-filter="all" aria-pressed="true">All (2)</button>
-<button type="button" class="tm-paper-filter" data-filter="published" aria-pressed="false">Published (1)</button>
-<button type="button" class="tm-paper-filter" data-filter="preprint" aria-pressed="false">Preprints (0)</button>
-</nav>
-</div>
+{{< research-toolbar >}}
 
 {{< katex >}}
 
