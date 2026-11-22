@@ -10,6 +10,7 @@
     <!-- Main content -->
     <div class="research-card-content">
 
+      <div class="tm-research-badges">
       <!-- Status -->
       {{ with .Get "status" }}
         <div class="research-card-status">
@@ -22,6 +23,8 @@
           <span class="tm-research-category">{{ . }}</span>
         {{ end }}
       {{ end }}
+
+      </div>
 
       <!-- Title -->
       <h3 class="research-card-title">
