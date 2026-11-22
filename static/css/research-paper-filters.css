@@ -33,3 +33,46 @@
  .research-card-summary .research-card-status,
  .research-card-summary .tm-research-category{margin-top:3px!important}
 }
+
+/* Fixed publication toolbar: shortcode generates a single unbroken flex row. */
+#main-content .tm-paper-toolbar,
+article .tm-paper-toolbar,
+.prose .tm-paper-toolbar{
+ display:flex!important;flex-direction:row!important;align-items:center!important;
+ justify-content:space-between!important;flex-wrap:nowrap!important;
+ width:100%!important;max-width:none!important;gap:16px!important;
+ margin:0 0 12px!important;padding:0!important;clear:both!important;
+}
+#main-content .tm-paper-toolbar h2,
+.prose .tm-paper-toolbar h2{
+ display:block!important;flex:1 1 auto!important;min-width:0!important;
+ width:auto!important;max-width:none!important;white-space:nowrap!important;
+ font-size:1.5rem!important;line-height:1.35!important;
+ margin:0!important;padding:0!important;border:0!important;
+}
+#main-content .tm-paper-toolbar nav.tm-paper-filters,
+.prose .tm-paper-toolbar nav.tm-paper-filters{
+ display:flex!important;flex-direction:row!important;flex-wrap:nowrap!important;
+ align-items:center!important;justify-content:flex-end!important;
+ flex:0 0 auto!important;width:auto!important;gap:8px!important;
+ margin:0!important;padding:0!important;
+}
+.tm-paper-toolbar nav.tm-paper-filters button{margin:0!important;white-space:nowrap!important}
+.prose .tm-paper-toolbar + *{margin-top:0!important}
+.research-card-summary{align-items:flex-start!important}
+.research-card-summary .research-card-number{margin-top:0!important}
+.research-card-summary .research-card-status,
+.research-card-summary .tm-research-category{
+ height:38px!important;min-height:38px!important;box-sizing:border-box!important;
+ display:inline-flex!important;align-items:center!important;justify-content:center!important;
+ margin-top:0!important;margin-bottom:12px!important;
+ padding:0 12px!important;border-radius:19px!important;
+ font-size:.75rem!important;line-height:1!important;text-transform:none!important;
+}
+.research-card-summary .tm-research-category{margin-left:8px!important}
+@media(max-width:650px){
+ #main-content .tm-paper-toolbar{gap:6px!important}
+ #main-content .tm-paper-toolbar h2{font-size:clamp(.67rem,2.8vw,1rem)!important}
+ #main-content .tm-paper-toolbar nav.tm-paper-filters{gap:3px!important}
+ .tm-paper-toolbar .tm-paper-filter{font-size:.6rem!important;padding:4px 6px!important}
+}
