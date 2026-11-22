@@ -524,3 +524,32 @@ body:has(#tm-compact-section-marker):not(:has(.tm-paper-filters)) #main-content 
   align-self:stretch!important;min-height:0!important;
  }
 }
+
+/* Stable header geometry: reserve the arrow's space even on Home. */
+.tm-site-header-row{position:relative!important}
+.tm-site-header-row .tm-header-back-slot{
+ display:inline-flex!important;align-items:center;justify-content:flex-start;
+ flex:0 0 42px!important;width:42px!important;min-width:42px!important;
+}
+.tm-site-header-row .tm-header-back-slot > .tm-header-home-back{
+ position:static!important;left:auto!important;top:auto!important;
+ transform:none!important;margin:0!important;
+}
+@media(max-width:640px){
+ .tm-site-header-row{padding-left:0!important;margin-left:-8px!important;width:calc(100% + 8px)!important}
+ .tm-site-header-row .tm-header-back-slot{flex-basis:42px!important;width:42px!important;min-width:42px!important}
+}
+/* Blowfish-style sticky TOC: the sidebar column itself sticks.
+   A sticky inner child constrained by a short flex column can scroll away. */
+@media(min-width:1024px){
+ .tm-udgrp-toc-wrap{
+  position:sticky!important;top:76px!important;
+  align-self:flex-start!important;height:auto!important;
+  max-height:calc(100dvh - 88px)!important;
+ }
+ .tm-udgrp-toc-wrap > .tm-udgrp-toc{
+  position:static!important;top:auto!important;
+  max-height:calc(100dvh - 88px)!important;
+  overflow-y:auto!important;overscroll-behavior:contain;
+ }
+}
