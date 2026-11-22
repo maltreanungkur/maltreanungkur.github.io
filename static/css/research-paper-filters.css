@@ -18,7 +18,7 @@
 
 /* One compact horizontal heading/filter toolbar. */
 .tm-paper-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 14px;width:100%}
-.tm-paper-toolbar h2{margin:0!important;padding:0!important;font-size:inherit;font-weight:700;line-height:1.3;flex:1 1 auto;min-width:0}
+.tm-paper-toolbar h2{margin:0!important;padding:0!important;font-size:1.5rem;font-weight:700;line-height:1.3;flex:1 1 auto;min-width:0}
 .tm-paper-toolbar .tm-paper-filters{display:flex;align-items:center;justify-content:flex-end;gap:9px;flex:0 0 auto;margin:0!important;padding:0!important;white-space:nowrap}
 .tm-paper-toolbar .tm-paper-filter{white-space:nowrap}
 .research-card-summary .research-card-number{margin-top:0!important}
