@@ -18,7 +18,9 @@
       {{ end }}
 
       {{ with .Get "category" }}
-        <span class="tm-research-category">{{ . }}</span>
+        {{ range split . " · " }}
+          <span class="tm-research-category">{{ . }}</span>
+        {{ end }}
       {{ end }}
 
       <!-- Title -->
