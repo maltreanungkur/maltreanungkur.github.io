@@ -4,7 +4,7 @@
 
     <!-- Number -->
     <div class="research-card-number">
-      {{ .Ordinal }}
+      {{ .Page.Scratch.Add "tmResearchCardIndex" 1 }}{{ .Page.Scratch.Get "tmResearchCardIndex" }}
     </div>
 
     <!-- Main content -->
@@ -87,7 +87,7 @@
         <button
           type="button"
           class="research-card-button"
-          onclick="event.preventDefault(); event.stopPropagation(); this.closest('details').open = true;"
+          onclick="event.preventDefault(); event.stopPropagation(); this.closest('details').open = !this.closest('details').open;"
         >
           <span class="research-card-button-icon abstract">
             <svg viewBox="0 0 24 24" aria-hidden="true">
