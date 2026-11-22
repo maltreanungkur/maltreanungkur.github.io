@@ -377,3 +377,18 @@ html body:has(.tm-paper-filters)::after{
 }
 html body:has(.tm-paper-filters) #background-image,
 html body:has(.tm-paper-filters) .tm-math-field{display:none!important}
+
+/* Research: match Home's exact base navy and overlay darkness, without its image. */
+html body:has(.tm-paper-filters){
+ background-color:#0b1e34!important;background-image:none!important;
+}
+html body:has(.tm-paper-filters)::before{
+ background-color:#0b1e34!important;
+ background-image:radial-gradient(ellipse at 72% 28%,rgba(33,67,103,.14),transparent 68%),
+                  radial-gradient(ellipse at 22% 76%,rgba(18,48,82,.12),transparent 70%)!important;
+ filter:blur(4px)!important;opacity:1!important;transform:none!important;
+}
+html body:has(.tm-paper-filters)::after{
+ background:rgba(8,23,43,.43)!important;
+ filter:none!important;opacity:1!important;
+}
