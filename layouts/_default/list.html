@@ -32,8 +32,8 @@
   {{ end }}
   <section class="{{ $tocMargin }} prose flex max-w-full flex-col dark:prose-invert lg:flex-row mb-10">
     {{ if $showToc }}
-      <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
-        <div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}{{ if eq (lower .RelPermalink) "/teaching/udgrp/" }} lg:max-h-[calc(100vh-90px)] lg:overflow-y-auto{{ end }}">
+      <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs{{ if eq (lower .RelPermalink) "/teaching/udgrp/" }} tm-udgrp-toc-wrap{{ end }}">
+        <div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}{{ if eq (lower .RelPermalink) "/teaching/udgrp/" }} tm-udgrp-toc{{ end }}{{ if eq (lower .RelPermalink) "/teaching/udgrp/" }} lg:max-h-[calc(100vh-90px)] lg:overflow-y-auto{{ end }}">
           {{ partial "toc.html" . }}
         </div>
       </div>
