@@ -356,7 +356,7 @@ body:has(.tm-paper-filters)::after{
   pointer-events:none!important;
 }
 body:has(.tm-paper-filters) #background-image,
-body:has(.tm-paper-filters) .tm-math-field,
+
 body:has(.tm-paper-filters) .single_hero_background:not(#menu-blur){
   display:none!important;
 }
@@ -376,7 +376,7 @@ html body:has(.tm-paper-filters)::after{
  filter:blur(48px)!important;opacity:1!important;z-index:0!important;pointer-events:none!important
 }
 html body:has(.tm-paper-filters) #background-image,
-html body:has(.tm-paper-filters) .tm-math-field{display:none!important}
+
 
 /* Research: match Home's exact base navy and overlay darkness, without its image. */
 html body:has(.tm-paper-filters){
