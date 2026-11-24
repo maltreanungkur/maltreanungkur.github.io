@@ -53,13 +53,13 @@ In this lecture, Rinkiny covered the basics of group theory, including:
 - Kernel and Image of a Homomorphism.
 - The 1st Isomorphism Theorem.
 
-**Lecture Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Lec1.pdf">Download</a><br>
+**Lecture Notes**: <a href="/documents/GGT_Lec1.pdf">Download</a><br>
 
-**Introductory Slides**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/Intro.pdf">Download</a><br>
+**Introductory Slides**: <a href="/documents/Intro.pdf">Download</a><br>
 
-**Problem Set**: <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/GGT_P1.pdf">Download</a><br>
+**Problem Set**: <a href="/documents/GGT_P1.pdf">Download</a><br>
 
-**Chocolate Problem's Solution** (by Nikhil Nagaria): <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/Nikhil.pdf">Download</a><br>
+**Chocolate Problem's Solution** (by Nikhil Nagaria): <a href="/documents/Nikhil.pdf">Download</a><br>
 
 **Correct Submissions to the Chocolate Problem** (Lexicographical Order): Arkaprovo Das, Daibik Barik, Nikhil Nagaria, Payal Rajora, Ramdas Singh, Sai Prabhav, Sarvesh Soni, Shankha Suvra Dam.
 
@@ -85,11 +85,11 @@ In this lecture, I covered the idea of group action and solved some problems usi
 
 **Lecture Video**: <a href="https://drive.google.com/file/d/15HMkkSBmOjMMYW94HgiuHWbCY3PVhSSD/view?usp=sharing">View</a><br>
 
-**Lecture Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Lec2.pdf">Download</a><br>
+**Lecture Notes**: <a href="/documents/GGT_Lec2.pdf">Download</a><br>
 
-**Problem Set**: <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/GGT_P2.pdf">Download</a><br>
+**Problem Set**: <a href="/documents/GGT_P2.pdf">Download</a><br>
 
-**Chocolate Problem's Solution** (by Sai Prabhav): <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/SaiP.pdf">Download</a><br>
+**Chocolate Problem's Solution** (by Sai Prabhav): <a href="/documents/SaiP.pdf">Download</a><br>
 
 **Correct Submissions to the Chocolate Problem** (Lexicographical Order): Arkaprovo Das, Daibik Barik, Nikhil Nagaria, Sai Prabhav, Sarvesh Soni.
 
@@ -114,9 +114,9 @@ In this lecture, I covered the following topics and proved some theorems includi
 
 **Lecture Video**: <a href="https://drive.google.com/file/d/1kk1QPkq3g1NJeBzjdx2nwxBRt253eypG/view?usp=sharing">View</a><br>
 
-**Lecture Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Lec3.pdf">Download</a><br>
+**Lecture Notes**: <a href="/documents/GGT_Lec3.pdf">Download</a><br>
 
-**Problem Set**: <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/GGT_P3.pdf">Download</a><br>
+**Problem Set**: <a href="/documents/GGT_P3.pdf">Download</a><br>
 
 ---
 
@@ -136,9 +136,9 @@ In this lecture, Rinkiny covered the following topics:
 
 **Lecture Video**: <a href="https://drive.google.com/file/d/1l94EGwxxLWOdbs-V2hoBAZ6g906iHypS/view?usp=sharing">View</a><br>
 
-**Lecture Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Lec4.pdf">Download</a><br>
+**Lecture Notes**: <a href="/documents/GGT_Lec4.pdf">Download</a><br>
 
-**Problem Set**: <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/GGT_P4.pdf">Download</a><br>
+**Problem Set**: <a href="/documents/GGT_P4.pdf">Download</a><br>
 
 ---
 
@@ -156,9 +156,9 @@ In this lecture, I did some problem solving on group actions and discussed some 
 
 **Lecture Video**: <a href="https://drive.google.com/file/d/1nkEFXV6pAxiCvuRYH6_eG4pTfTLnn5C7/view?usp=sharing">View</a><br>
 
-**Lecture Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Lec5.pdf">Download</a><br>
+**Lecture Notes**: <a href="/documents/GGT_Lec5.pdf">Download</a><br>
 
-**Problem Set**: <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/GGT_P5.pdf">Download</a><br>
+**Problem Set**: <a href="/documents/GGT_P5.pdf">Download</a><br>
 
 ---
 
@@ -176,9 +176,9 @@ In this lecture, Rinkiny covered the following topics:
 
 **Lecture Video**: <a href="https://drive.google.com/file/d/1bCddzmznVKxXGA_iLL2bLxLrD_hDqzUr/view?usp=sharing">View</a><br>
 
-**Lecture Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Lec6.pdf">Download</a><br>
+**Lecture Notes**: <a href="/documents/GGT_Lec6.pdf">Download</a><br>
 
-**Problem Set**: <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/GGT_P6.pdf">Download</a><br>
+**Problem Set**: <a href="/documents/GGT_P6.pdf">Download</a><br>
 
 ---
 
@@ -198,9 +198,9 @@ In this lecture, I covered the following topics:
 
 **Lecture Video**: <a href="https://drive.google.com/file/d/1YBqTe-ti4BcFMRfwXfJ3bmSPuVSqMRyn/view?usp=sharing">View</a><br>
 
-**Lecture Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Lec7.pdf">Download</a><br>
+**Lecture Notes**: <a href="/documents/GGT_Lec7.pdf">Download</a><br>
 
-**Problem Set**: <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/GGT_P7.pdf">Download</a><br>
+**Problem Set**: <a href="/documents/GGT_P7.pdf">Download</a><br>
 
 ---
 
@@ -217,9 +217,9 @@ In this lecture, Rinkiny covered the following topics:
 
 **Lecture Video**: <a href="https://drive.google.com/file/d/1Da5TxMBAeMhojxqVU4fNGJHJHOYH-J9y/view?usp=sharing">View</a><br>
 
-**Lecture Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Lec8.pdf">Download</a><br>
+**Lecture Notes**: <a href="/documents/GGT_Lec8.pdf">Download</a><br>
 
-**Problem Set**: <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/GGT_P8.pdf">Download</a><br>
+**Problem Set**: <a href="/documents/GGT_P8.pdf">Download</a><br>
 
 ---
 
@@ -227,14 +227,14 @@ In this lecture, Rinkiny covered the following topics:
 
 As part of the final stage of the UDGRP program, students were given the opportunity to present on the following topics:  
 
-- **The Farey Tree** – Refer to <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/OHGGT.pdf">*Office Hours with a Geometric Group Theorist* by Matt Clay and Dan Margalit, Chapter 3</a>.  
-- **Ping Pong Lemma and its applications** – Refer to <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/OHGGT.pdf">*Office Hours with a Geometric Group Theorist* by Matt Clay and Dan Margalit, Chapter 5</a>.  
+- **The Farey Tree** – Refer to <a href="/documents/OHGGT.pdf">*Office Hours with a Geometric Group Theorist* by Matt Clay and Dan Margalit, Chapter 3</a>.  
+- **Ping Pong Lemma and its applications** – Refer to <a href="/documents/OHGGT.pdf">*Office Hours with a Geometric Group Theorist* by Matt Clay and Dan Margalit, Chapter 5</a>.  
   - Additional references:  
     1. <a href="https://capsncrunch.github.io/articles/the_ping_pong_lemma.html">The Ping Pong Lemma</a>  
     2. <a href="https://chiasme.wordpress.com/2015/03/08/an-elementary-application-of-ping-pong-lemma/">An Elementary Application of the Ping Pong Lemma</a>  
-- **Lamplighter Group** – Refer to <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/OHGGT.pdf">*Office Hours with a Geometric Group Theorist* by Matt Clay and Dan Margalit, Chapter 15</a>.  
+- **Lamplighter Group** – Refer to <a href="/documents/OHGGT.pdf">*Office Hours with a Geometric Group Theorist* by Matt Clay and Dan Margalit, Chapter 15</a>.  
 - **Ends of Group** – Refer to <a href="https://www.cambridge.org/core/books/metric-spaces-of-nonpositive-curvature/9E6D1F7C57B30B2616A0A0E1DBE03F5B">*Metric Spaces of Non-Positive Curvature* by Martin R. Bridson and André Haefliger, Pages 142–148</a>.  
-- **The Hyperbolic Plane** – Refer to <a href="https://raw.githubusercontent.com/maltreanungkur/web/main/documents/OHGGT.pdf">*Low-Dimensional Geometry* by Francis Bonahon, Chapter 2</a>.  
+- **The Hyperbolic Plane** – Refer to <a href="/documents/OHGGT.pdf">*Low-Dimensional Geometry* by Francis Bonahon, Chapter 2</a>.  
 
 ---
 
@@ -251,7 +251,7 @@ In this session, Arkaprovo Das, from BMath 1st Year presented the following topi
 - Explained the action of \\( \text{SL}_n(\mathbb{Z}) \\) on the Farey Graph.  
 - Constructed the Farey Graph and its relation to modular transformations.
 
-**Presentation Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Pes1.pdf">Download</a><br>
+**Presentation Notes**: <a href="/documents/GGT_Pes1.pdf">Download</a><br>
 
 ---
 
@@ -267,7 +267,7 @@ In this session, V Sai Prabhav, from BMath 1st Year presented the following topi
 - Constructed the Farey Graph.
 - Defined the Farey Tree using the Farey Complex.
 
-**Presentation Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Pes2.pdf">Download</a><br>
+**Presentation Notes**: <a href="/documents/GGT_Pes2.pdf">Download</a><br>
 
 ---
 
@@ -282,7 +282,7 @@ In this session, Sayan Dewan, from BMath 1st Year presented the following topics
 - Proved the lemma.
 - Application of the Ping Pong Lemma to \\( \mathbb{Z} * 2\mathbb{Z},  \mathbb{Z} * \mathbb{Z}, \text {and } \text{SL}_2(\mathbb{Z}) \\).
 
-**Presentation Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Pes3.pdf">Download</a><br>
+**Presentation Notes**: <a href="/documents/GGT_Pes3.pdf">Download</a><br>
 
 ---
 
@@ -298,9 +298,9 @@ In this session, Nikhil Nagaria, from BMath 3rd Year, presented the following to
 - Quasi-isometric proper and geodesic metric spaces have isomorphic ends.  
 - Discussed amalgamated products and some theorems related to these topics.
 
-**Presentation Notes**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Pes4.pdf">Download</a><br>
+**Presentation Notes**: <a href="/documents/GGT_Pes4.pdf">Download</a><br>
 
-**Presentation Scribbles**: <a href="https://github.com/maltreanungkur/web/raw/main/documents/GGT_Pes4(a).pdf">Download</a><br>
+**Presentation Scribbles**: <a href="/documents/GGT_Pes4(a).pdf">Download</a><br>
 
 ---
 
